@@ -10,7 +10,7 @@ from utils.log_config_params import log_config_params
 
 
 def train_multiple_models(
-    train_corpus, test_corpus, train_label_names, test_label_names
+    train_corpus, test_corpus, train_label_names, test_label_names, aug_logging=False
 ):
     lr = LogisticRegression(penalty="l2", max_iter=1000, C=1, random_state=42)
     svm = LinearSVC(penalty="l2", C=1, random_state=42)
@@ -58,9 +58,10 @@ def train_multiple_models(
             scores_df.loc[name] = temp_list
 
             # logging
-            log_config_params()
+            log_config_params(aug_logging=aug_logging)
             mlflow.log_param("model_name", name)
-            mlflow.log_param("num_train_sentences", len(train_corpus))
+            mlflow.log_param("num_train_sentences", train_corpus.shape[0])
+            mlflow.log_param("num_test_sentences", test_corpus.shape[0])
             mlflow.log_metric("train_accuracy", mean_train_score)
             mlflow.log_metric("val_accuracy", mean_val_score)
             mlflow.log_metric("test_accuracy", test_score)

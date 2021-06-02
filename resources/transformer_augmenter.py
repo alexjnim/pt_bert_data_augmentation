@@ -37,6 +37,7 @@ class transformer_augmenter:
             all_sentences.append(" ".join(sentence))
         for _ in range(new_sent_per_sent):
             sentence = original_sentence
+            print("original sentence: {}".format([word for word in original_sentence]))
             replace_tokens = []
             new_tokens = []
             for __ in range(num_words_replace):

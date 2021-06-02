@@ -39,4 +39,4 @@ train_file_path = (
 
 
 # tfidf, word2vec, BERT, sentencetransformer
-vectorizer_type = "tfidf"
+vectorizer_type = "word2vec"

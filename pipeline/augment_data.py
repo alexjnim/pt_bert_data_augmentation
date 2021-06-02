@@ -13,14 +13,13 @@ def augment_data(df, verbose=False):
     train_corpus, test_corpus, train_label_names, test_label_names = train_test_split(
         df["text"], df["category"], test_size=0.33, random_state=42
     )
-
-    tokenizer = ToktokTokenizer()
-    augmenter = transformer_augmenter()
-
     _, train_corpus_to_augment = train_test_split(
         train_corpus, test_size=config.percent_to_augment, random_state=42
     )
     n_sentences = len(train_corpus_to_augment)
+
+    tokenizer = ToktokTokenizer()
+    augmenter = transformer_augmenter()
 
     augmented_sentences = []
     aug_sent_categories = []
@@ -65,5 +64,3 @@ def augment_data(df, verbose=False):
     train_df.to_csv(config.train_file_path, index=False)
     test_df.to_csv(config.test_file_path, index=False)
     return aug_train_df, test_df
-
-
