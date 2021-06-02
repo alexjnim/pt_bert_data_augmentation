@@ -25,9 +25,12 @@ def document_vectorizer(corpus, model, num_features):
     return np.array(features)
 
 
-def get_Word2Vec_embeddings(text_corpus, labels, vector_dim=500):
-    train_corpus, test_corpus, train_label_names, test_label_names = train_test_split(
-        text_corpus, labels, test_size=0.33, random_state=42
+def get_Word2Vec_embeddings(train_df, test_df, vector_dim=500):
+    train_corpus, test_corpus, train_label_names, test_label_names = (
+        train_df["text"],
+        test_df["text"],
+        train_df["category"],
+        test_df["category"],
     )
 
     tokenizer = ToktokTokenizer()

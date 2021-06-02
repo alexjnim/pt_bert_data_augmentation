@@ -25,17 +25,21 @@ def document_vectorizer(corpus, model, num_features):
     return np.array(features)
 
 
-def get_FastText_embeddings(text_corpus, labels):
+def get_FastText_embeddings(train_df, test_df):
     print("getting FastText embeddings")
-    train_corpus, test_corpus, train_label_names, test_label_names = train_test_split(
-        text_corpus, labels, test_size=0.33, random_state=42
+    train_corpus, test_corpus, train_label_names, test_label_names = (
+        train_df["text"],
+        test_df["text"],
+        train_df["category"],
+        test_df["category"],
     )
+
     tokenizer = ToktokTokenizer()
     # tokenize corpus
     tokenized_train = [tokenizer.tokenize(text) for text in train_corpus]
     tokenized_test = [tokenizer.tokenize(text) for text in test_corpus]
     # choose the dimension of embeddings
-    ft_num_features = 1000
+    ft_num_features = 500
     # sg decides whether to use the skip-gram model (1) or CBOW (0)
     print("building fasttext model")
     ft_model = FastText(
