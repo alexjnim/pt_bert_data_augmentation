@@ -34,8 +34,6 @@ def train_multiple_models(
 
     for model, name in zip(models, names):
         with mlflow.start_run():
-            log_config_params()
-            mlflow.log_param("model_name", name)
             print("now training {}".format(model))
             temp_list = []
             model.fit(train_corpus, train_label_names)
@@ -59,6 +57,9 @@ def train_multiple_models(
 
             scores_df.loc[name] = temp_list
 
+            # logging
+            log_config_params()
+            mlflow.log_param("model_name", name)
             mlflow.log_metric("train_accuracy", mean_train_score)
             mlflow.log_metric("val_accuracy", mean_val_score)
             mlflow.log_metric("test_accuracy", test_score)
