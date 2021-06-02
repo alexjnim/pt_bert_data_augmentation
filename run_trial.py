@@ -15,7 +15,7 @@ mlflow.set_experiment("nlp_classification_without_augmentation")
 #       get data
 #######################
 if Path(config.train_file_path).is_file():
-    print("loading augmented data...")
+    print("loading data...")
     train_df = pd.read_csv(config.train_file_path)
     test_df = pd.read_csv(config.test_file_path)
 else:
