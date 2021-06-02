@@ -6,7 +6,7 @@ from sklearn.svm import LinearSVC
 from sklearn.linear_model import SGDClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
-from resources.log_config_params import log_config_params
+from utils.log_config_params import log_config_params
 
 
 def train_multiple_models(
@@ -60,6 +60,7 @@ def train_multiple_models(
             # logging
             log_config_params()
             mlflow.log_param("model_name", name)
+            mlflow.log_param("num_train_sentences", len(train_corpus))
             mlflow.log_metric("train_accuracy", mean_train_score)
             mlflow.log_metric("val_accuracy", mean_val_score)
             mlflow.log_metric("test_accuracy", test_score)
