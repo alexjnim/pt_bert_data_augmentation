@@ -5,8 +5,18 @@ n_sentences_percent = 0.5
 new_sent_per_sent = 1
 num_words_replace = 3
 
-file_path = (
-    "data/augmented_data_rf_"
+aug_file_path = (
+    "data/augmented_train_data_rf_"
+    + str(reduce_factor)
+    + "_nsps_"
+    + str(new_sent_per_sent)
+    + "_nwr_"
+    + str(num_words_replace)
+    + ".csv"
+)
+
+test_file_path = (
+    "data/test_data_rf_"
     + str(reduce_factor)
     + "_nsps_"
     + str(new_sent_per_sent)

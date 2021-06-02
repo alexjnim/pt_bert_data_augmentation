@@ -26,19 +26,16 @@ mlflow.set_experiment("nlp_augmentation_classification")
 # )
 
 
-my_file = Path(config.file_path)
-if my_file.is_file():
+aug_file_path = Path(config.aug_file_path)
+if aug_file_path.is_file():
     print("loading augmented data...")
-    aug_df = pd.read_csv(config.file_path)
-    print(aug_df.head())
+    aug_train_df = pd.read_csv(config.aug_file_path)
+    test_df = pd.read_csv(config.test_file_path)
 else:
     print("augmented data does not exist\ngenerating augmented data now")
-    df = get_data(
-        reduce_factor=config.reduce_factor, top_categories=config.top_categories
-    )
+    df = get_data(reduce_factor=0.001, top_categories=config.top_categories)
     # augment data
-    aug_df = augment_data(df, verbose=False)
-
+    aug_train_df, test_df = augment_data(df, verbose=False)
 
 #######################
 #    vectorise text
@@ -49,12 +46,13 @@ else:
     test_corpus,
     train_label_names,
     test_label_names,
-) = vectorize_text(aug_df, type=config.vectorizer_type)
-#######################
-#    train model
-#######################
-scores_df = train_multiple_models(
-    train_corpus, test_corpus, train_label_names, test_label_names
-)
-print(aug_df["category"].value_counts(normalize=True))
-print(scores_df)
+) = vectorize_text(aug_train_df, test_df, type=config.vectorizer_type)
+
+# #######################
+# #    train model
+# #######################
+# scores_df = train_multiple_models(
+#     train_corpus, test_corpus, train_label_names, test_label_names
+# )
+# print(aug_df["category"].value_counts(normalize=True))
+# print(scores_df)
