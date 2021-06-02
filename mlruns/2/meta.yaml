@@ -1,0 +1,4 @@
+artifact_location: file:///Users/alexnim/Documents/CODE/08_nlp_data_augmentation_test/mlruns/2
+experiment_id: '2'
+lifecycle_stage: active
+name: nlp_classification_without_augmentation
