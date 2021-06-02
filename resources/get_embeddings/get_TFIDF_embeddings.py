@@ -2,10 +2,14 @@ from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-def get_TFIDF_embeddings(text_corpus, labels):
-    train_corpus, test_corpus, train_label_names, test_label_names = train_test_split(
-        text_corpus, labels, test_size=0.33, random_state=42
+def get_TFIDF_embeddings(train_df, test_df):
+    train_corpus, test_corpus, train_label_names, test_label_names = (
+        train_df["text"],
+        test_df["text"],
+        train_df["category"],
+        test_df["category"],
     )
+
     print("getting tfidf vectors")
     tv = TfidfVectorizer(
         min_df=0.0, max_df=1.0, norm="l2", use_idf=True, smooth_idf=True
