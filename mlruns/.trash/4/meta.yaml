@@ -1,4 +1,0 @@
-artifact_location: file:///Users/alexnim/Documents/CODE/08_nlp_data_augmentation_test/mlruns/4
-experiment_id: '4'
-lifecycle_stage: active
-name: SGD Classifier
