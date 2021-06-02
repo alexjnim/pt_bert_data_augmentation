@@ -1,0 +1,4 @@
+artifact_location: file:///Users/alexnim/Documents/CODE/08_nlp_data_augmentation_test/mlruns/6
+experiment_id: '6'
+lifecycle_stage: active
+name: Gradient Boosting Classifier

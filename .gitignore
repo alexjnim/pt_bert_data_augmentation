@@ -1,0 +1,5 @@
+data/News_Category_Dataset_v2.json
+.vscode/
+*__pycache__
+*.ipynb_checkpoints
+testing_scripts
