@@ -17,13 +17,15 @@ def augment_data(df, verbose=False):
     tokenizer = ToktokTokenizer()
     augmenter = transformer_augmenter()
 
-    # n_sentences = round(len(df) * config.n_sentences_percent)
-    n_sentences = len(train_corpus)
+    _, train_corpus_to_augment = train_test_split(
+        train_corpus, test_size=config.percent_to_augment, random_state=42
+    )
+    n_sentences = len(train_corpus_to_augment)
 
     augmented_sentences = []
     aug_sent_categories = []
 
-    tokenized_text = [tokenizer.tokenize(text) for text in train_corpus]
+    tokenized_text = [tokenizer.tokenize(text) for text in train_corpus_to_augment]
     for i in tqdm(range(n_sentences)):
         sentence = tokenized_text[i]
         category = train_label_names.iloc[i]
@@ -49,11 +51,19 @@ def augment_data(df, verbose=False):
         columns=["text", "category"],
     )
 
+    train_df = pd.DataFrame(
+        list(zip(train_corpus, train_label_names)),
+        columns=["text", "category"],
+    )
+
     test_df = pd.DataFrame(
         list(zip(test_corpus, test_label_names)),
         columns=["text", "category"],
     )
 
     aug_train_df.to_csv(config.aug_file_path, index=False)
+    train_df.to_csv(config.train_file_path, index=False)
     test_df.to_csv(config.test_file_path, index=False)
     return aug_train_df, test_df
+
+
