@@ -1,9 +1,13 @@
-reduce_factor = 0.1
+reduce_factor = 0.2
 top_categories = 5
 # all if you want to select all
 percent_to_augment = 0.5
 new_sent_per_sent = 1
 num_words_replace = 3
+
+# tfidf, word2vec, fastttext, BERT, sentencetransformer
+vectorizer_type = "word2vec"
+
 
 aug_file_path = (
     "data/augmented_train_data_pta_"
@@ -36,7 +40,3 @@ train_file_path = (
     + str(num_words_replace)
     + ".csv"
 )
-
-
-# tfidf, word2vec, BERT, sentencetransformer
-vectorizer_type = "word2vec"

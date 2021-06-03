@@ -1,3 +1,5 @@
+# https://www.depends-on-the-definition.com/data-augmentation-with-transformers/
+
 import random
 import re
 import nltk
@@ -37,7 +39,6 @@ class transformer_augmenter:
             all_sentences.append(" ".join(sentence))
         for _ in range(new_sent_per_sent):
             sentence = original_sentence
-            print("original sentence: {}".format([word for word in original_sentence]))
             replace_tokens = []
             new_tokens = []
             for __ in range(num_words_replace):
@@ -68,15 +69,22 @@ class transformer_augmenter:
                 # fill in the masked token with Bert, this will return num_sample_tokens many results, select a random one here
                 new_pos = "."
                 new_token = "Ġ"
-                while new_pos in [".", ")", "(", "''", ":", "POS"] or (
-                    new_token == "Ġ" or new_token == "•" or new_token == replace_token
+                while new_pos in [".", ")", "(", "''", ":", "POS", "#"] or (
+                    new_token == "Ġ"
+                    or new_token == "•"
+                    or new_token == replace_token
+                    or new_token == " "
                 ):
                     res = self.fill_mask(masked_text)[
                         random.choice(range(self.num_sample_tokens))
                     ]
                     new_token = res["token_str"]
                     new_token = re.sub(" +", "", new_token)
-                    new_pos = nltk.pos_tag([new_token])[0][1]
+                    # don't want any errors here
+                    try:
+                        new_pos = nltk.pos_tag([new_token])[0][1]
+                    except:
+                        new_pos = "POS"
                 # create output samples list
                 tmp_sentence, augmented_sentence = sentence.copy(), []
 

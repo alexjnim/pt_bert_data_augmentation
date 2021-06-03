@@ -25,7 +25,7 @@ else:
         reduce_factor=config.reduce_factor, top_categories=config.top_categories
     )
     # augment data
-    aug_train_df, test_df = augment_data(df, verbose=True)
+    aug_train_df, test_df = augment_data(df, verbose=False)
 
 #######################
 #    vectorise text
