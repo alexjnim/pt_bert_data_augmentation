@@ -33,6 +33,7 @@ def get_Word2Vec_embeddings(train_df, test_df, vector_dim=500):
         test_df["category"],
     )
 
+    print("getting word2vec vectors")
     tokenizer = ToktokTokenizer()
     # tokenize corpus
     tokenized_train = [tokenizer.tokenize(text) for text in train_corpus]
