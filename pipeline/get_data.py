@@ -20,8 +20,6 @@ def get_data(reduce_factor=None, top_categories=None):
         _, df = train_test_split(df, test_size=reduce_factor, random_state=42)
         print("reduced size of data: {}\n".format(len(df)))
 
-    ### lower here only!
-    # df["text"] = df["text"].str.lower()
     df["text"] = normalize_corpus(
         corpus=df["text"],
         html_stripping=True,
