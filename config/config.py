@@ -7,7 +7,7 @@ new_sent_per_sent = 1
 num_words_replace = 3
 
 # tfidf, word2vec, fastttext, BERT, sentencetransformer
-vectorizer_type = "word2vec"
+vectorizer_type = "tfidf"
 
 
 aug_file_path = (
