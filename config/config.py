@@ -1,5 +1,6 @@
 reduce_factor = 0.2
 top_categories = 5
+test_size = 0.2
 # all if you want to select all
 percent_to_augment = 0.5
 new_sent_per_sent = 1
@@ -18,6 +19,8 @@ aug_file_path = (
     + str(new_sent_per_sent)
     + "_nwr_"
     + str(num_words_replace)
+    + "_ts_"
+    + str(test_size)
     + ".csv"
 )
 
@@ -28,6 +31,8 @@ test_file_path = (
     + str(new_sent_per_sent)
     + "_nwr_"
     + str(num_words_replace)
+    + "_ts_"
+    + str(test_size)
     + ".csv"
 )
 
@@ -38,5 +43,7 @@ train_file_path = (
     + str(new_sent_per_sent)
     + "_nwr_"
     + str(num_words_replace)
+    + "_ts_"
+    + str(test_size)
     + ".csv"
 )

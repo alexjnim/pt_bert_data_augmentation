@@ -23,7 +23,9 @@ else:
     df = get_data(
         reduce_factor=config.reduce_factor, top_categories=config.top_categories
     )
-    train_df, test_df = train_test_split(df, test_size=0.33, random_state=42)
+    train_df, test_df = train_test_split(
+        df, test_size=config.test_size, random_state=42
+    )
     train_df.to_csv(config.train_file_path, index=False)
     test_df.to_csv(config.test_file_path, index=False)
 

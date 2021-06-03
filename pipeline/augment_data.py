@@ -10,7 +10,9 @@ from sklearn.model_selection import train_test_split
 
 def augment_data(df, verbose=False):
 
-    train_df, test_df = train_test_split(df, test_size=0.2, random_state=42)
+    train_df, test_df = train_test_split(
+        df, test_size=config.test_size, random_state=42
+    )
 
     _, train_df_to_augment = train_test_split(
         train_df, test_size=config.percent_to_augment, random_state=42
