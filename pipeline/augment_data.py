@@ -10,13 +10,12 @@ from sklearn.model_selection import train_test_split
 
 def augment_data(df, verbose=False):
 
-    train_corpus, test_corpus, train_label_names, test_label_names = train_test_split(
-        df["text"], df["category"], test_size=0.33, random_state=42
+    train_df, test_df = train_test_split(df, test_size=0.2, random_state=42)
+
+    _, train_df_to_augment = train_test_split(
+        train_df, test_size=config.percent_to_augment, random_state=42
     )
-    _, train_corpus_to_augment = train_test_split(
-        train_corpus, test_size=config.percent_to_augment, random_state=42
-    )
-    n_sentences = len(train_corpus_to_augment)
+    n_sentences = len(train_df_to_augment)
 
     tokenizer = ToktokTokenizer()
     augmenter = transformer_augmenter()
@@ -24,10 +23,12 @@ def augment_data(df, verbose=False):
     augmented_sentences = []
     aug_sent_categories = []
 
-    tokenized_text = [tokenizer.tokenize(text) for text in train_corpus_to_augment]
+    tokenized_text = [
+        tokenizer.tokenize(text) for text in train_df_to_augment["text"].to_list()
+    ]
     for i in tqdm(range(n_sentences)):
         sentence = tokenized_text[i]
-        category = train_label_names.iloc[i]
+        category = train_df_to_augment["category"].iloc[i]
 
         augmented_sentences.extend(
             augmenter.generate(
@@ -47,16 +48,6 @@ def augment_data(df, verbose=False):
 
     aug_train_df = pd.DataFrame(
         list(zip(augmented_sentences, aug_sent_categories)),
-        columns=["text", "category"],
-    )
-
-    train_df = pd.DataFrame(
-        list(zip(train_corpus, train_label_names)),
-        columns=["text", "category"],
-    )
-
-    test_df = pd.DataFrame(
-        list(zip(test_corpus, test_label_names)),
         columns=["text", "category"],
     )
 
