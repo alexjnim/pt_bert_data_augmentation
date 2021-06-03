@@ -4,3 +4,4 @@
 data/
 !data/info.txt
 testing_scripts
+*.ipynb
