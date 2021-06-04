@@ -1,4 +1,4 @@
-reduce_factor = 0.1
+reduce_factor = 0.2
 top_categories = 5
 test_size = 0.2
 # all if you want to select all
