@@ -3,7 +3,6 @@ import mlflow
 from pathlib import Path
 from sklearn.model_selection import train_test_split
 from pipeline.get_data import get_data
-from pipeline.augment_data import augment_data
 from pipeline.vectorize_text import vectorize_text
 from pipeline.train_multiple_models import train_multiple_models
 from config import config
