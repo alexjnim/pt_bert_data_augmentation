@@ -2,7 +2,7 @@ import mlflow
 from config import config
 
 
-def log_config_params(aug_logging=True):
+def log_config_params(aug_logging: bool = True):
     mlflow.log_param("reduc_factor", config.reduce_factor)
     mlflow.log_param("top_categories", config.top_categories)
     mlflow.log_param("vectorizer_type", config.vectorizer_type)

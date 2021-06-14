@@ -8,12 +8,15 @@ from config import config
 from sklearn.model_selection import train_test_split
 import logging
 from config.logging_config import configure_logger
+from typing import Tuple
 
 logger = logging.getLogger(__name__)
 logger = configure_logger(logger)
 
 
-def augment_data(df, verbose=False):
+def augment_data(
+    df: pd.DataFrame, verbose: bool = False
+) -> Tuple[pd.DataFrame, pd.DataFrame]:
 
     train_df, test_df = train_test_split(
         df, test_size=config.test_size, random_state=42

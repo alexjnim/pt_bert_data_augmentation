@@ -9,12 +9,13 @@ import collections
 import en_core_web_sm
 from nltk.tokenize.toktok import ToktokTokenizer
 from nltk.corpus import wordnet
+from typing import Sequence
 
 tokenizer = ToktokTokenizer()
 nlp = en_core_web_sm.load()
 
 
-def strip_html_tags(text):
+def strip_html_tags(text: str) -> str:
     """
     Removes html tags
     Input
@@ -29,13 +30,13 @@ def strip_html_tags(text):
     return stripped_text
 
 
-def simple_porter_stemming(text):
+def simple_porter_stemming(text: str) -> str:
     ps = nltk.porter.PorterStemmer()
     text = " ".join([ps.stem(word) for word in text.split()])
     return text
 
 
-def lemmatize_text(text):
+def lemmatize_text(text: str) -> str:
 
     text = nlp(text)
     text = " ".join(
@@ -44,7 +45,7 @@ def lemmatize_text(text):
     return text
 
 
-def expand_contractions(text, contraction_mapping=CONTRACTION_MAP):
+def expand_contractions(text: str, contraction_mapping: dict = CONTRACTION_MAP) -> str:
 
     contractions_pattern = re.compile(
         "({})".format("|".join(contraction_mapping.keys())),
@@ -67,7 +68,7 @@ def expand_contractions(text, contraction_mapping=CONTRACTION_MAP):
     return expanded_text
 
 
-def remove_accented_chars(text):
+def remove_accented_chars(text: str) -> str:
     text = (
         unicodedata.normalize("NFKD", text)
         .encode("ascii", "ignore")
@@ -76,13 +77,13 @@ def remove_accented_chars(text):
     return text
 
 
-def remove_special_characters(text, remove_digits=False):
+def remove_special_characters(text: str, remove_digits: bool = False) -> str:
     pattern = r"[^a-zA-Z0-9\s]|\[|\]" if not remove_digits else r"[^a-zA-Z\s]|\[|\]"
     text = re.sub(pattern, "", text)
     return text
 
 
-def remove_stopwords(text):
+def remove_stopwords(text: str) -> str:
     stopwords = nltk.corpus.stopwords.words("english")
     stopwords.remove("no")
     stopwords.remove("not")
@@ -95,11 +96,11 @@ def remove_stopwords(text):
     return filtered_text
 
 
-def remove_repeated_characters(text):
+def remove_repeated_characters(text: str) -> str:
     repeat_pattern = re.compile(r"(\w*)(\w)\2(\w*)")
     match_substitution = r"\1\2\3"
 
-    def replace(old_word):
+    def replace(old_word: str) -> str:
         if wordnet.synsets(old_word):
             return old_word
         new_word = repeat_pattern.sub(match_substitution, old_word)
@@ -110,17 +111,17 @@ def remove_repeated_characters(text):
 
 
 def normalize_corpus(
-    corpus,
-    html_stripping=True,
-    contraction_expansion=True,
-    accented_char_removal=True,
-    text_stemming=False,
-    text_lemmatization=True,
-    special_char_removal=True,
-    remove_digits=True,
-    stopword_removal=True,
-    lower_case=True,
-):
+    corpus: Sequence[str],
+    html_stripping: bool = True,
+    contraction_expansion: bool = True,
+    accented_char_removal: bool = True,
+    text_stemming: bool = False,
+    text_lemmatization: bool = True,
+    special_char_removal: bool = True,
+    remove_digits: bool = True,
+    stopword_removal: bool = True,
+    lower_case: bool = True,
+) -> Sequence[str]:
 
     normalized_corpus = []
     count = 0

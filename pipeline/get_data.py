@@ -8,7 +8,7 @@ logger = logging.getLogger(__name__)
 logger = configure_logger(logger)
 
 
-def get_data(reduce_factor=None, top_categories=None):
+def get_data(reduce_factor: float = None, top_categories: int = None) -> pd.DataFrame:
     original_df = pd.read_json("data/News_Category_Dataset_v2.json", lines=True)
     df = original_df.copy()
     df["text"] = df["headline"] + " " + df["short_description"]

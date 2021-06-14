@@ -25,12 +25,12 @@ class transformer_augmenter:
 
     def generate(
         self,
-        sentence,
-        new_sent_per_sent=3,
-        num_words_replace=1,
-        verbose=False,
-        list_of_words=False,
-    ):
+        sentence: str,
+        new_sent_per_sent: int = 3,
+        num_words_replace: int = 1,
+        verbose: bool = False,
+        list_of_words: bool = False,
+    ) -> list:
         """
         Return a list of n augmented sentences.
         """

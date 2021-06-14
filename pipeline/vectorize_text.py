@@ -6,9 +6,11 @@ from resources.get_embeddings.get_SentenceTransformer_embeddings import (
     get_SentenceTransformer_embeddings,
 )
 from resources.get_embeddings.get_BERT_embeddings import get_BERT_embeddings
+from typing import Tuple
+import pandas as pd
 
 
-def vectorize_text(train_df, test_df, type="tfidf"):
+def vectorize_text(train_df: pd.DataFrame, test_df: pd.DataFrame, type: str = "tfidf"):
     if type == "tfidf":
         return get_TFIDF_embeddings(train_df, test_df)
     elif type == "word2vec":

@@ -15,8 +15,12 @@ logger = configure_logger(logger)
 
 
 def train_multiple_models(
-    train_corpus, test_corpus, train_label_names, test_label_names, aug_logging=False
-):
+    train_corpus,
+    test_corpus,
+    train_label_names: pd.Series,
+    test_label_names: pd.Series,
+    aug_logging: bool = False,
+) -> pd.DataFrame:
     lr = LogisticRegression(penalty="l2", max_iter=1000, C=1, random_state=42)
     svm = LinearSVC(penalty="l2", C=1, random_state=42)
     svm_sgd = SGDClassifier(loss="hinge", penalty="l2", max_iter=5, random_state=42)
