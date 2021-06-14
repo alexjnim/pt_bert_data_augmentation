@@ -1,4 +1,4 @@
-import path
+import path_holder
 import pathlib
 
 reduce_factor = 0.2
@@ -50,7 +50,8 @@ train_file_name = (
     + ".csv"
 )
 
-PROJECT_PATH = pathlib.Path(path.__file__).resolve().parent
+# PROJECT_PATH = pathlib.Path(path_holder.__file__).resolve().parent
+PROJECT_PATH = pathlib.Path("").absolute()
 DATA_DIR = "data"
 
 aug_file_path = PROJECT_PATH / DATA_DIR / aug_file_name
