@@ -1,5 +1,10 @@
 from sklearn.model_selection import train_test_split
 from sklearn.feature_extraction.text import TfidfVectorizer
+import logging
+from config.logging_config import configure_logger
+
+logger = logging.getLogger(__name__)
+logger = configure_logger(logger)
 
 
 def get_TFIDF_embeddings(train_df, test_df):
@@ -10,7 +15,7 @@ def get_TFIDF_embeddings(train_df, test_df):
         test_df["category"],
     )
 
-    print("getting tfidf vectors")
+    logger.info("getting tfidf vectors")
     tv = TfidfVectorizer(
         min_df=0.0, max_df=1.0, norm="l2", use_idf=True, smooth_idf=True
     )  # ngram_range = (1,2)

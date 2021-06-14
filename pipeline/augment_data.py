@@ -6,6 +6,11 @@ from resources.transformer_augmenter import transformer_augmenter
 from nltk.tokenize.toktok import ToktokTokenizer
 from config import config
 from sklearn.model_selection import train_test_split
+import logging
+from config.logging_config import configure_logger
+
+logger = logging.getLogger(__name__)
+logger = configure_logger(logger)
 
 
 def augment_data(df, verbose=False):
@@ -44,9 +49,9 @@ def augment_data(df, verbose=False):
 
         for _ in range(config.new_sent_per_sent + 1):
             aug_sent_categories.append(category)
-
-    print("number of the original sentences: {}".format(n_sentences))
-    print("number of the augmented sentences: {}".format(len(augmented_sentences)))
+    logger.info(
+        f"number of original sentences: {n_sentences}\nnumber of sentences (original + augmented): {len(augmented_sentences)}"
+    )
 
     aug_train_df = pd.DataFrame(
         list(zip(augmented_sentences, aug_sent_categories)),

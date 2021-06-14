@@ -7,6 +7,11 @@ from sklearn.linear_model import SGDClassifier
 from sklearn.ensemble import RandomForestClassifier
 from sklearn.ensemble import GradientBoostingClassifier
 from utils.log_config_params import log_config_params
+import logging
+from config.logging_config import configure_logger
+
+logger = logging.getLogger(__name__)
+logger = configure_logger(logger)
 
 
 def train_multiple_models(
@@ -34,7 +39,7 @@ def train_multiple_models(
 
     for model, name in zip(models, names):
         with mlflow.start_run():
-            print("now training {}".format(model))
+            logger.info(f"now training {model}")
             temp_list = []
             model.fit(train_corpus, train_label_names)
             scores = cross_validate(

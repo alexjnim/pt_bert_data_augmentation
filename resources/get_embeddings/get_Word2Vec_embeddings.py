@@ -2,6 +2,11 @@ from sklearn.model_selection import train_test_split
 from gensim.models import Word2Vec
 from nltk.tokenize.toktok import ToktokTokenizer
 import numpy as np
+import logging
+from config.logging_config import configure_logger
+
+logger = logging.getLogger(__name__)
+logger = configure_logger(logger)
 
 
 def document_vectorizer(corpus, model, num_features):
@@ -33,7 +38,7 @@ def get_Word2Vec_embeddings(train_df, test_df, vector_dim=500):
         test_df["category"],
     )
 
-    print("getting word2vec vectors")
+    logger.info("getting word2vec vectors")
     tokenizer = ToktokTokenizer()
     # tokenize corpus
     tokenized_train = [tokenizer.tokenize(text) for text in train_corpus]

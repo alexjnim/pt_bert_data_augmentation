@@ -1,0 +1,15 @@
+artifact_uri: file:///Users/alexnim/Documents/CODE/08_nlp_data_augmentation_test/mlruns/2/56d292d3f2614e288395c9b68b7af73e/artifacts
+end_time: 1623679702797
+entry_point_name: ''
+experiment_id: '2'
+lifecycle_stage: active
+name: ''
+run_id: 56d292d3f2614e288395c9b68b7af73e
+run_uuid: 56d292d3f2614e288395c9b68b7af73e
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1623679702293
+status: 3
+tags: []
+user_id: alexnim

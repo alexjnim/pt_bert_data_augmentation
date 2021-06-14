@@ -1,7 +1,6 @@
-import path_holder
 import pathlib
 
-reduce_factor = 0.2
+reduce_factor = 0.002
 top_categories = 5
 test_size = 0.2
 # all if you want to select all

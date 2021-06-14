@@ -4,7 +4,11 @@ import random
 import re
 import nltk
 from transformers import pipeline
-from transformers.file_utils import FAISS_IMPORT_ERROR
+import logging
+from config.logging_config import configure_logger
+
+logger = logging.getLogger(__name__)
+logger = configure_logger(logger)
 
 
 class transformer_augmenter:
@@ -128,5 +132,7 @@ class transformer_augmenter:
                             [word for word in augmented_sentence]
                         )
                     )
-
+            logger.debug(
+                f"replace tokens: {replace_tokens}\nPOS of replace tokens: {[nltk.pos_tag([token])[0][1] for token in replace_tokens]}\nnew tokens: {new_tokens}\nPOS of new tokens: {[nltk.pos_tag([token])[0][1] for token in new_tokens]}\noriginal sentence: {[word for word in original_sentence]}\naugmented sentence: {[word for word in augmented_sentence]}"
+            )
         return all_sentences
