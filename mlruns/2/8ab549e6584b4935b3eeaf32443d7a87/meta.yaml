@@ -2,7 +2,7 @@ artifact_uri: file:///Users/alexnim/Documents/CODE/08_nlp_data_augmentation_test
 end_time: null
 entry_point_name: ''
 experiment_id: '2'
-lifecycle_stage: active
+lifecycle_stage: deleted
 name: ''
 run_id: 8ab549e6584b4935b3eeaf32443d7a87
 run_uuid: 8ab549e6584b4935b3eeaf32443d7a87
