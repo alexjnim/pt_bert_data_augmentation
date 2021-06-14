@@ -1,6 +1,6 @@
-2021-06-14 15:38:20,383 — __main__ — INFO —<module>:27 — 
+2021-06-14 15:43:22,451 — __main__ — INFO —<module>:27 — 
 augmented data does not exist...generating augmented data now
-2021-06-14 15:38:23,968 — pipeline.get_data — INFO —get_data:20 — 
+2021-06-14 15:43:25,470 — pipeline.get_data — INFO —get_data:20 — 
 size of data: 200853
 extracting top 5 categories only
 reduce size of data: 86160
@@ -10,510 +10,510 @@ ENTERTAINMENT     16058
 TRAVEL             9887
 STYLE & BEAUTY     9649
 Name: category, dtype: int64
-2021-06-14 15:38:23,969 — pipeline.get_data — INFO —get_data:24 — 
+2021-06-14 15:43:25,471 — pipeline.get_data — INFO —get_data:24 — 
 extracting 0.002 of the data
 orginal size of data: 86160
-2021-06-14 15:38:24,035 — pipeline.get_data — INFO —get_data:27 — 
+2021-06-14 15:43:25,534 — pipeline.get_data — INFO —get_data:27 — 
 reduced size of data: 173
-2021-06-14 15:38:36,740 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['see', 'and', 'hm']
-POS of replace tokens: ['VB', 'CC', 'NN']
-new tokens: ['hi', 'i', 'twitter']
+2021-06-14 15:43:46,321 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['uk', 'see', 'huffpost']
+POS of replace tokens: ['NN', 'VB', 'NN']
+new tokens: ['tho', 'hi', 'facebook']
 POS of new tokens: ['NN', 'NN', 'NN']
 original sentence: ['kristen', 'stewart', 'bares', 'her', 'bra', 'soul', 'to', 'vogue', 'uk', 'i', 'am', 'not', 'that', 'smooth', 'photos', 'want', 'more', 'be', 'sure', 'to', 'check', 'out', 'huffpost', 'style', 'on', 'twitter', 'facebook', 'tumblr', 'and', 'pinterest', 'hm', 'you', 'do', 'not', 'say', 'see', 'kristen']
-augmented sentence: ['kristen', 'stewart', 'bares', 'her', 'bra', 'soul', 'to', 'vogue', 'uk', 'i', 'am', 'not', 'that', 'smooth', 'photos', 'want', 'more', 'be', 'sure', 'to', 'check', 'out', 'huffpost', 'style', 'on', 'twitter', 'facebook', 'tumblr', 'i', 'pinterest', 'twitter', 'you', 'do', 'not', 'say', 'hi', 'kristen']
-2021-06-14 15:38:37,045 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['again', 'for', 'davis']
-POS of replace tokens: ['RB', 'IN', 'NN']
-new tokens: ['so', 'another', 'Smith']
-POS of new tokens: ['RB', 'DT', 'NNP']
-original sentence: ['wendy', 'davis', 'says', 'she', 'wants', 'to', 'run', 'for', 'office', 'again', 'i', 'miss', 'being', 'in', 'the', 'ring']
-augmented sentence: ['wendy', 'Smith', 'says', 'she', 'wants', 'to', 'run', 'another', 'office', 'so', 'i', 'miss', 'being', 'in', 'the', 'ring']
-2021-06-14 15:38:37,474 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['msn', 'air', 'bruce']
-POS of replace tokens: ['NN', 'NN', 'NN']
-new tokens: ['Having', 'Air', 'Mark']
-POS of new tokens: ['VBG', 'NNP', 'NN']
-original sentence: ['iron', 'maiden', 'singer', 'bruce', 'dickinson', 'says', 'his', 'airline', 'could', 'take', 'off', 'within', '50', 'days', 'msn', 'had', 'some', 'fun', 'calling', 'the', 'aviation', 'endeavor', 'fitting', 'for', 'a', 'man', 'whose', 'voice', 'has', 'often', 'been', 'favorably', 'compared', 'to', 'an', 'air']
-augmented sentence: ['iron', 'maiden', 'singer', 'Mark', 'dickinson', 'says', 'his', 'airline', 'could', 'take', 'off', 'within', '50', 'days', 'Having', 'had', 'some', 'fun', 'calling', 'the', 'aviation', 'endeavor', 'fitting', 'for', 'a', 'man', 'whose', 'voice', 'has', 'often', 'been', 'favorably', 'compared', 'to', 'an', 'Air']
-2021-06-14 15:38:38,128 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['and', 'have', 'name']
-POS of replace tokens: ['CC', 'VB', 'NN']
-new tokens: [',', "'ve", 'cat']
-POS of new tokens: [',', 'VBP', 'NN']
-original sentence: ['my', 'dog', 'and', 'i', 'are', 'growing', 'old', 'together', 'and', 'things', 'are', 'getting', 'a', 'little', 'ruff', 'fred', 'and', 'i', 'have', 'spent', 'almost', 'every', 'day', 'together', 'since', 'he', 'was', 'weaned', 'by', 'his', 'mother', 'at', 'the', 'lundgren', 'home', 'we', 'are', 'known', 'as', 'big', 'fred', 'and', 'little', 'fred', 'but', 'we', 'both', 'come', 'to', 'attention', 'whenever', 'my', 'wife', 'calls', 'our', 'name']
-augmented sentence: ['my', 'dog', ',', 'i', 'are', 'growing', 'old', 'together', 'and', 'things', 'are', 'getting', 'a', 'little', 'ruff', 'fred', 'and', 'i', "'ve", 'spent', 'almost', 'every', 'day', 'together', 'since', 'he', 'was', 'weaned', 'by', 'his', 'mother', 'at', 'the', 'lundgren', 'home', 'we', 'are', 'known', 'as', 'big', 'fred', 'and', 'little', 'fred', 'but', 'we', 'both', 'come', 'to', 'attention', 'whenever', 'my', 'wife', 'calls', 'our', 'cat']
-2021-06-14 15:38:38,466 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['been', 'sedgwicks', 'that']
-POS of replace tokens: ['VBN', 'NNS', 'IN']
-new tokens: ['married', 'david', 'wait']
-POS of new tokens: ['JJ', 'NN', 'NN']
-original sentence: ['kevin', 'bacon', 'adorably', 'reminds', 'us', 'he', 'is', 'been', 'kyra', 'sedgwicks', 'husband', 'for', '27', 'years', 'that', 'is', '1404', 'weeks']
-augmented sentence: ['kevin', 'bacon', 'adorably', 'reminds', 'us', 'he', 'is', 'married', 'kyra', 'david', 'husband', 'for', '27', 'years', 'wait', 'is', '1404', 'weeks']
-2021-06-14 15:38:38,855 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['know', 'in', 'risks']
-POS of replace tokens: ['VB', 'IN', 'NNS']
-new tokens: ['KNOW', 'since', 'under']
-POS of new tokens: ['NNP', 'IN', 'IN']
-original sentence: ['quiz', 'do', 'you', 'know', 'how', 'to', 'stay', 'safe', 'in', 'the', 'summer', 'summertime', 'means', 'more', 'time', 'spent', 'outdoors', 'do', 'you', 'know', 'how', 'to', 'protect', 'yourself', 'from', 'seasonal', 'health', 'risks', 'the', 'hot', 'temperatures']
-augmented sentence: ['quiz', 'do', 'you', 'KNOW', 'how', 'to', 'stay', 'safe', 'since', 'the', 'summer', 'summertime', 'means', 'more', 'time', 'spent', 'outdoors', 'do', 'you', 'know', 'how', 'to', 'protect', 'yourself', 'from', 'seasonal', 'health', 'under', 'the', 'hot', 'temperatures']
-2021-06-14 15:38:39,226 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['things', 'trainer', 'client']
-POS of replace tokens: ['NNS', 'NN', 'NN']
-new tokens: ['Factors', 'instructor', 'woman']
-POS of new tokens: ['NNS', 'NN', 'NN']
-original sentence: ['searching', 'for', 'a', 'personal', 'trainer', '5', 'things', 'you', 'need', 'to', 'know', 'there', 'are', 'five', 'aspects', 'the', 'average', 'client', 'needs', 'to', 'pay', 'attention', 'to', 'when', 'searching', 'for', 'a', 'personal', 'trainer']
-augmented sentence: ['searching', 'for', 'a', 'personal', 'instructor', '5', 'Factors', 'you', 'need', 'to', 'know', 'there', 'are', 'five', 'aspects', 'the', 'average', 'woman', 'needs', 'to', 'pay', 'attention', 'to', 'when', 'searching', 'for', 'a', 'personal', 'trainer']
-2021-06-14 15:38:39,681 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['and', 'first', 'stein']
-POS of replace tokens: ['CC', 'RB', 'NN']
-new tokens: ['dan', 'US', 'trump']
-POS of new tokens: ['NN', 'NN', 'NN']
-original sentence: ['gary', 'johnson', 'and', 'jill', 'stein', 'to', 'america', 'hey', 'remember', 'us', 'the', 'thirdparty', 'candidates', 'were', 'not', 'impressed', 'by', 'the', 'first', 'presidential', 'debate']
-augmented sentence: ['gary', 'johnson', 'dan', 'jill', 'trump', 'to', 'america', 'hey', 'remember', 'us', 'the', 'thirdparty', 'candidates', 'were', 'not', 'impressed', 'by', 'the', 'US', 'presidential', 'debate']
-2021-06-14 15:38:40,024 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['for', 'oldman', 'Levi']
+augmented sentence: ['kristen', 'stewart', 'bares', 'her', 'bra', 'soul', 'to', 'vogue', 'tho', 'i', 'am', 'not', 'that', 'smooth', 'photos', 'want', 'more', 'be', 'sure', 'to', 'check', 'out', 'facebook', 'style', 'on', 'twitter', 'facebook', 'tumblr', 'and', 'pinterest', 'hm', 'you', 'do', 'not', 'say', 'hi', 'kristen']
+2021-06-14 15:43:47,131 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['in', 'ring', 'office']
 POS of replace tokens: ['IN', 'NN', 'NN']
-new tokens: ['with', 'Levi', 'anka']
+new tokens: ['since', 'start', 'senate']
+POS of new tokens: ['IN', 'NN', 'NN']
+original sentence: ['wendy', 'davis', 'says', 'she', 'wants', 'to', 'run', 'for', 'office', 'again', 'i', 'miss', 'being', 'in', 'the', 'ring']
+augmented sentence: ['wendy', 'davis', 'says', 'she', 'wants', 'to', 'run', 'for', 'senate', 'again', 'i', 'miss', 'being', 'since', 'the', 'start']
+2021-06-14 15:43:49,477 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['airline', 'compared', 'contrasted']
+POS of replace tokens: ['NN', 'VBN', 'VBN']
+new tokens: ['career', 'contrasted', 'attributed']
+POS of new tokens: ['NN', 'VBN', 'VBN']
+original sentence: ['iron', 'maiden', 'singer', 'bruce', 'dickinson', 'says', 'his', 'airline', 'could', 'take', 'off', 'within', '50', 'days', 'msn', 'had', 'some', 'fun', 'calling', 'the', 'aviation', 'endeavor', 'fitting', 'for', 'a', 'man', 'whose', 'voice', 'has', 'often', 'been', 'favorably', 'compared', 'to', 'an', 'air']
+augmented sentence: ['iron', 'maiden', 'singer', 'bruce', 'dickinson', 'says', 'his', 'career', 'could', 'take', 'off', 'within', '50', 'days', 'msn', 'had', 'some', 'fun', 'calling', 'the', 'aviation', 'endeavor', 'fitting', 'for', 'a', 'man', 'whose', 'voice', 'has', 'often', 'been', 'favorably', 'attributed', 'to', 'an', 'air']
+2021-06-14 15:43:50,876 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['fred', 'i', 'together']
+POS of replace tokens: ['VBN', 'NN', 'RB']
+new tokens: ['ey', 'baby', 'lately']
+POS of new tokens: ['NN', 'NN', 'RB']
+original sentence: ['my', 'dog', 'and', 'i', 'are', 'growing', 'old', 'together', 'and', 'things', 'are', 'getting', 'a', 'little', 'ruff', 'fred', 'and', 'i', 'have', 'spent', 'almost', 'every', 'day', 'together', 'since', 'he', 'was', 'weaned', 'by', 'his', 'mother', 'at', 'the', 'lundgren', 'home', 'we', 'are', 'known', 'as', 'big', 'fred', 'and', 'little', 'fred', 'but', 'we', 'both', 'come', 'to', 'attention', 'whenever', 'my', 'wife', 'calls', 'our', 'name']
+augmented sentence: ['my', 'dog', 'and', 'baby', 'are', 'growing', 'old', 'lately', 'and', 'things', 'are', 'getting', 'a', 'little', 'ruff', 'ey', 'and', 'i', 'have', 'spent', 'almost', 'every', 'day', 'together', 'since', 'he', 'was', 'weaned', 'by', 'his', 'mother', 'at', 'the', 'lundgren', 'home', 'we', 'are', 'known', 'as', 'big', 'fred', 'and', 'little', 'fred', 'but', 'we', 'both', 'come', 'to', 'attention', 'whenever', 'my', 'wife', 'calls', 'our', 'name']
+2021-06-14 15:43:51,514 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['sedgwicks', 'kevin', 'His']
+POS of replace tokens: ['NNS', 'NN', 'PRP$']
+new tokens: ['ving', 'His', 'Lady']
+POS of new tokens: ['VBG', 'PRP$', 'NN']
+original sentence: ['kevin', 'bacon', 'adorably', 'reminds', 'us', 'he', 'is', 'been', 'kyra', 'sedgwicks', 'husband', 'for', '27', 'years', 'that', 'is', '1404', 'weeks']
+augmented sentence: ['Lady', 'bacon', 'adorably', 'reminds', 'us', 'he', 'is', 'been', 'kyra', 'ving', 'husband', 'for', '27', 'years', 'that', 'is', '1404', 'weeks']
+2021-06-14 15:43:52,975 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['summer', 'how', 'safe']
+POS of replace tokens: ['NN', 'WRB', 'JJ']
+new tokens: ['cooler', 'if', 'outdoors']
+POS of new tokens: ['NN', 'IN', 'NNS']
+original sentence: ['quiz', 'do', 'you', 'know', 'how', 'to', 'stay', 'safe', 'in', 'the', 'summer', 'summertime', 'means', 'more', 'time', 'spent', 'outdoors', 'do', 'you', 'know', 'how', 'to', 'protect', 'yourself', 'from', 'seasonal', 'health', 'risks', 'the', 'hot', 'temperatures']
+augmented sentence: ['quiz', 'do', 'you', 'know', 'if', 'to', 'stay', 'outdoors', 'in', 'the', 'cooler', 'summertime', 'means', 'more', 'time', 'spent', 'outdoors', 'do', 'you', 'know', 'how', 'to', 'protect', 'yourself', 'from', 'seasonal', 'health', 'risks', 'the', 'hot', 'temperatures']
+2021-06-14 15:43:54,858 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['searching', 'trainer', 'five']
+POS of replace tokens: ['VBG', 'NN', 'CD']
+new tokens: ['shopping', 'instructor', '5']
+POS of new tokens: ['NN', 'NN', 'CD']
+original sentence: ['searching', 'for', 'a', 'personal', 'trainer', '5', 'things', 'you', 'need', 'to', 'know', 'there', 'are', 'five', 'aspects', 'the', 'average', 'client', 'needs', 'to', 'pay', 'attention', 'to', 'when', 'searching', 'for', 'a', 'personal', 'trainer']
+augmented sentence: ['shopping', 'for', 'a', 'personal', 'instructor', '5', 'things', 'you', 'need', 'to', 'know', 'there', 'are', '5', 'aspects', 'the', 'average', 'client', 'needs', 'to', 'pay', 'attention', 'to', 'when', 'searching', 'for', 'a', 'personal', 'trainer']
+2021-06-14 15:43:56,326 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['thirdparty', 'johnson', 'presidential']
+POS of replace tokens: ['NN', 'NN', 'JJ']
+new tokens: ['GOP', 'syrup', 'Presidential']
+POS of new tokens: ['NNP', 'NN', 'JJ']
+original sentence: ['gary', 'johnson', 'and', 'jill', 'stein', 'to', 'america', 'hey', 'remember', 'us', 'the', 'thirdparty', 'candidates', 'were', 'not', 'impressed', 'by', 'the', 'first', 'presidential', 'debate']
+augmented sentence: ['gary', 'syrup', 'and', 'jill', 'stein', 'to', 'america', 'hey', 'remember', 'us', 'the', 'GOP', 'candidates', 'were', 'not', 'impressed', 'by', 'the', 'first', 'Presidential', 'debate']
+2021-06-14 15:43:57,236 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['for', 'oscar', 'in']
+POS of replace tokens: ['IN', 'NN', 'IN']
+new tokens: ['as', 'Oscar', 've']
 POS of new tokens: ['IN', 'NN', 'NN']
 original sentence: ['these', '19', 'men', 'are', 'vying', 'for', 'best', 'actor', 'in', 'the', '2018', 'oscar', 'race', 'gary', 'oldman', 'can', 'claim', 'the', 'brightest', 'hour', 'in', 'this', 'contest', 'for', 'now']
-augmented sentence: ['these', '19', 'men', 'are', 'vying', 'with', 'best', 'actor', 'in', 'the', '2018', 'oscar', 'race', 'gary', 'anka', 'can', 'claim', 'the', 'brightest', 'hour', 'in', 'this', 'contest', 'for', 'now']
-2021-06-14 15:38:40,336 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['that', 'provided', 'Donald']
-POS of replace tokens: ['IN', 'VBN', 'NNP']
-new tokens: ['Donald', 'had', 'President']
-POS of new tokens: ['NNP', 'VBD', 'NNP']
+augmented sentence: ['these', '19', 'men', 'are', 'vying', 'as', 'best', 'actor', 've', 'the', '2018', 'Oscar', 'race', 'gary', 'oldman', 'can', 'claim', 'the', 'brightest', 'hour', 'in', 'this', 'contest', 'for', 'now']
+2021-06-14 15:43:58,247 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['just', 'in', 'zero']
+POS of replace tokens: ['RB', 'IN', 'NN']
+new tokens: ['Perhaps', 'od', 'solid']
+POS of new tokens: ['RB', 'NN', 'JJ']
 original sentence: ['just', 'a', 'reminder', 'that', 'trump', 'has', 'still', 'provided', 'zero', 'evidence', 'of', 'voter', 'fraud', 'evidence', 'disproving', 'it', 'however', 'keeps', 'rolling', 'in']
-augmented sentence: ['just', 'a', 'reminder', 'President', 'trump', 'has', 'still', 'had', 'zero', 'evidence', 'of', 'voter', 'fraud', 'evidence', 'disproving', 'it', 'however', 'keeps', 'rolling', 'in']
-2021-06-14 15:38:40,819 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['savoia', 'dies', 'fashion']
-POS of replace tokens: ['NN', 'NNS', 'NN']
-new tokens: ['shoots', 'died', 'Clothing']
-POS of new tokens: ['NNS', 'VBD', 'NN']
+augmented sentence: ['Perhaps', 'a', 'reminder', 'that', 'trump', 'has', 'still', 'provided', 'solid', 'evidence', 'of', 'voter', 'fraud', 'evidence', 'disproving', 'it', 'however', 'keeps', 'rolling', 'od']
+2021-06-14 15:43:58,906 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['was', 'savoia', 'at']
+POS of replace tokens: ['VBD', 'NN', 'IN']
+new tokens: ['age', 'meets', 'ages']
+POS of new tokens: ['NN', 'NNS', 'NNS']
 original sentence: ['michele', 'savoia', 'dead', 'new', 'york', 'city', 'fashion', 'designer', 'dies', 'at', '55', 'menswear', 'designer', 'michele', 'savoia', 'who', 'created', 'clothing', 'for', 'movie', 'stars', 'has', 'died', 'he', 'was', '55', 'outside', 'of', 'work', 'savoia', 'was']
-augmented sentence: ['michele', 'shoots', 'dead', 'new', 'york', 'city', 'Clothing', 'designer', 'died', 'at', '55', 'menswear', 'designer', 'michele', 'savoia', 'who', 'created', 'clothing', 'for', 'movie', 'stars', 'has', 'died', 'he', 'was', '55', 'outside', 'of', 'work', 'savoia', 'was']
-2021-06-14 15:38:41,250 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['stress', 'there', 'see']
-POS of replace tokens: ['NN', 'RB', 'VB']
-new tokens: ['tension', 'This', 'accept']
-POS of new tokens: ['NN', 'DT', 'NN']
-original sentence: ['there', 'is', 'no', 'stress', 'in', 'life', 'the', 'reason', 'i', 'do', 'not', 'promote', 'particular', 'techniques', 'for', 'stress', 'control', 'is', 'because', 'i', 'have', 'come', 'to', 'see', 'a', 'simple', 'truth', 'there', 'is', 'no', 'stress', 'in', 'life', 'there', 'is', 'only', 'stress', 'in', 'our', 'thinking']
-augmented sentence: ['This', 'is', 'no', 'tension', 'in', 'life', 'the', 'reason', 'i', 'do', 'not', 'promote', 'particular', 'techniques', 'for', 'stress', 'control', 'is', 'because', 'i', 'have', 'come', 'to', 'accept', 'a', 'simple', 'truth', 'there', 'is', 'no', 'stress', 'in', 'life', 'there', 'is', 'only', 'stress', 'in', 'our', 'thinking']
-2021-06-14 15:38:41,729 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['francos', 'movie', 'announces']
-POS of replace tokens: ['NN', 'NN', 'NNS']
-new tokens: ['announces', 'codec', '·']
-POS of new tokens: ['NNS', 'NN', 'NN']
-original sentence: ['seth', 'rogen', 'james', 'francos', 'new', 'movie', 'is', 'already', 'controversial']
-augmented sentence: ['seth', 'rogen', 'james', '·', 'new', 'codec', 'is', 'already', 'controversial']
-2021-06-14 15:38:42,135 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['for', 'will', 'celebration']
-POS of replace tokens: ['IN', 'MD', 'NN']
-new tokens: ['second', 'then', 'festivities']
-POS of new tokens: ['JJ', 'RB', 'NNS']
-original sentence: ['munich', 'prepares', 'for', 'annual', 'oktoberfest', 'celebration', 'photos', 'the', 'festivities', 'will', 'kick', 'off', 'sept', '21', 'in', 'munich', 'where', 'preparations', 'are', 'already', 'underway', 'germanys', 'famous', 'beersoaked', 'celebration']
-augmented sentence: ['munich', 'prepares', 'second', 'annual', 'oktoberfest', 'festivities', 'photos', 'the', 'festivities', 'then', 'kick', 'off', 'sept', '21', 'in', 'munich', 'where', 'preparations', 'are', 'already', 'underway', 'germanys', 'famous', 'beersoaked', 'celebration']
-2021-06-14 15:38:42,809 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['dates', 'will', 'schedule']
-POS of replace tokens: ['NNS', 'MD', 'NN']
-new tokens: ['reminders', 'only', 'accounts']
-POS of new tokens: ['NNS', 'RB', 'NNS']
-original sentence: ['how', 'to', 'secure', 'overpriced', 'inconvenient', 'holiday', 'flights', 'for', 'your', 'kids', 'bribe', 'your', 'children', 'with', 'extra', 'legroom', 'if', 'they', 'provide', 'you', 'with', 'correct', 'final', 'exam', 'dates', 'you', 'will', 'have', 'to', 'text', 'them', 'incessantly', 'for', '34', 'weeks', 'before', 'they', 'respond', 'with', 'those', 'dates', 'because', 'it', 'is', 'a', 'real', 'effort', 'on', 'their', 'part', 'to', 'log', 'into', 'their', 'online', 'schedule']
-augmented sentence: ['how', 'to', 'secure', 'overpriced', 'inconvenient', 'holiday', 'flights', 'for', 'your', 'kids', 'bribe', 'your', 'children', 'with', 'extra', 'legroom', 'if', 'they', 'provide', 'you', 'with', 'correct', 'final', 'exam', 'reminders', 'you', 'only', 'have', 'to', 'text', 'them', 'incessantly', 'for', '34', 'weeks', 'before', 'they', 'respond', 'with', 'those', 'dates', 'because', 'it', 'is', 'a', 'real', 'effort', 'on', 'their', 'part', 'to', 'log', 'into', 'their', 'online', 'accounts']
-2021-06-14 15:38:43,228 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['elected', 'washington', 'up']
-POS of replace tokens: ['VBN', 'NN', 'RB']
-new tokens: ['former', 'patronage', 'back']
-POS of new tokens: ['JJ', 'NN', 'RB']
-original sentence: ['jeb', 'bush', 'vows', 'to', 'shake', 'up', 'the', 'culture', 'of', 'washington', 'if', 'elected', 'president', 'bush', 'has', 'been', 'eager', 'to', 'distance', 'himself', 'from', 'washington', 'or', 'any', 'appearance', 'of', 'continuing', 'a', 'political', 'dynasty']
-augmented sentence: ['jeb', 'bush', 'vows', 'to', 'shake', 'back', 'the', 'culture', 'of', 'patronage', 'if', 'former', 'president', 'bush', 'has', 'been', 'eager', 'to', 'distance', 'himself', 'from', 'washington', 'or', 'any', 'appearance', 'of', 'continuing', 'a', 'political', 'dynasty']
-2021-06-14 15:38:43,684 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['congress', 'by', 'they']
-POS of replace tokens: ['NN', 'IN', 'PRP']
-new tokens: ['aliens', 'as', 'immigrants']
-POS of new tokens: ['NNS', 'IN', 'NNS']
-original sentence: ['democrats', 'are', 'trying', 'to', 'stop', 'republicans', 'from', 'forcing', 'library', 'of', 'congress', 'to', 'use', 'term', 'illegal', 'alien', 'terms', 'and', 'how', 'they', 'are', 'defined', 'by', 'society', 'change', 'with', 'time']
-augmented sentence: ['democrats', 'are', 'trying', 'to', 'stop', 'republicans', 'from', 'forcing', 'library', 'of', 'aliens', 'to', 'use', 'term', 'illegal', 'alien', 'terms', 'and', 'how', 'immigrants', 'are', 'defined', 'as', 'society', 'change', 'with', 'time']
-2021-06-14 15:38:44,194 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['ensure', 'huffpost', 'guarantee']
-POS of replace tokens: ['VB', 'NN', 'NN']
-new tokens: ['guarantee', 'Feast', 'mean']
-POS of new tokens: ['NN', 'NN', 'NN']
-original sentence: ['thanksgiving', 'outfits', 'that', 'will', 'ensure', 'you', 'can', 'have', 'pie', 'and', 'cake', 'here', 'at', 'huffpost', 'style', 'we', 'take', 'thanksgiving', 'dinner', 'very', 'seriously', 'we', 'want', 'to', 'maximize', 'our', 'food', 'intake', 'and', 'the', 'best', 'way']
-augmented sentence: ['thanksgiving', 'outfits', 'that', 'will', 'mean', 'you', 'can', 'have', 'pie', 'and', 'cake', 'here', 'at', 'Feast', 'style', 'we', 'take', 'thanksgiving', 'dinner', 'very', 'seriously', 'we', 'want', 'to', 'maximize', 'our', 'food', 'intake', 'and', 'the', 'best', 'way']
-2021-06-14 15:38:45,129 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['oprahs', 'presidential', 'it']
-POS of replace tokens: ['NN', 'JJ', 'PRP']
-new tokens: ['A', '2020', 'so']
-POS of new tokens: ['DT', 'CD', 'RB']
-original sentence: ['oprah', 'and', 'stedman', 'hint', 'she', 'is', 'open', 'to', 'presidential', 'run', 'she', 'would', 'absolutely', 'do', 'it', 'oprahs', 'longtime', 'partner', 'said', 'in', 'response', 'to', 'pleas', 'for', 'her', 'to', 'run']
-augmented sentence: ['oprah', 'and', 'stedman', 'hint', 'she', 'is', 'open', 'to', '2020', 'run', 'she', 'would', 'absolutely', 'do', 'so', 'A', 'longtime', 'partner', 'said', 'in', 'response', 'to', 'pleas', 'for', 'her', 'to', 'run']
-2021-06-14 15:38:45,821 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['about', 'in', 'apologizes']
-POS of replace tokens: ['IN', 'IN', 'NNS']
-new tokens: ['alleging', 'inc', 'Gawker']
-POS of new tokens: ['VBG', 'NN', 'NN']
-original sentence: ['donald', 'trumps', 'lawyer', 'apologizes', 'for', 'inarticulate', 'comment', 'about', 'spousal', 'rape', 'he', 'also', 'threatened', 'the', 'daily', 'beast', 'for', 'publishing', 'the', 'comment', 'in', 'the', 'first', 'place']
-augmented sentence: ['donald', 'trumps', 'lawyer', 'Gawker', 'for', 'inarticulate', 'comment', 'alleging', 'spousal', 'rape', 'he', 'also', 'threatened', 'the', 'daily', 'beast', 'for', 'publishing', 'the', 'comment', 'inc', 'the', 'first', 'place']
-2021-06-14 15:38:46,128 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['legislative', 'open', 'republicans']
-POS of replace tokens: ['JJ', 'JJ', 'NNS']
-new tokens: ['reform', 'fury', 'Congress']
-POS of new tokens: ['NN', 'NN', 'NNP']
-original sentence: ['gop', 'infighting', 'explodes', 'into', 'open', 'over', 'stalled', 'legislative', 'agenda', 'republicans', 'did', 'few', 'things', 'but', 'fight', 'this', 'week']
-augmented sentence: ['gop', 'infighting', 'explodes', 'into', 'fury', 'over', 'stalled', 'reform', 'agenda', 'Congress', 'did', 'few', 'things', 'but', 'fight', 'this', 'week']
-2021-06-14 15:38:46,506 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['emilio', 'bypass', 'undergoes']
-POS of replace tokens: ['NN', 'NN', 'NNS']
-new tokens: ['Jose', 'mast', 'having']
-POS of new tokens: ['VB', 'NN', 'VBG']
-original sentence: ['martin', 'sheen', 'undergoes', 'quadruple', 'bypass', 'surgery', 'his', 'son', 'emilio', 'estevez', 'says', 'the', 'actor', 'is', 'recovering', 'and', 'should', 'be', 'home', 'by', 'christmas']
-augmented sentence: ['martin', 'sheen', 'having', 'quadruple', 'mast', 'surgery', 'his', 'son', 'Jose', 'estevez', 'says', 'the', 'actor', 'is', 'recovering', 'and', 'should', 'be', 'home', 'by', 'christmas']
-2021-06-14 15:38:46,967 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['cannot', 'learn', 'experience']
+augmented sentence: ['michele', 'meets', 'dead', 'new', 'york', 'city', 'fashion', 'designer', 'dies', 'ages', '55', 'menswear', 'designer', 'michele', 'savoia', 'who', 'created', 'clothing', 'for', 'movie', 'stars', 'has', 'died', 'he', 'age', '55', 'outside', 'of', 'work', 'savoia', 'was']
+2021-06-14 15:43:59,354 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['reason', 'stress', 'truth']
 POS of replace tokens: ['NN', 'NN', 'NN']
-new tokens: ['shall', 'learnt', 'thereafter']
-POS of new tokens: ['MD', 'NN', 'RB']
-original sentence: ['weekly', 'meditations', 'for', 'healthy', 'sex', 'sept', '2026', 'through', 'life', 'experience', 'we', 'gradually', 'learn', 'to', 'differentiate', 'between', 'the', 'ideals', 'values', 'and', 'principles', 'which', 'can', 'and', 'those', 'which', 'cannot', 'be', 'compromised']
-augmented sentence: ['weekly', 'meditations', 'for', 'healthy', 'sex', 'sept', '2026', 'through', 'life', 'thereafter', 'we', 'gradually', 'learnt', 'to', 'differentiate', 'between', 'the', 'ideals', 'values', 'and', 'principles', 'which', 'can', 'and', 'those', 'which', 'shall', 'be', 'compromised']
-2021-06-14 15:38:47,248 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['not', 'could', 'climate']
-POS of replace tokens: ['RB', 'MD', 'NN']
-new tokens: ['completely', 'burns', 'recent']
-POS of new tokens: ['RB', 'NNS', 'JJ']
-original sentence: ['5', 'reasons', 'the', 'supreme', 'courts', 'climate', 'ruling', 'has', 'not', 'destroyed', 'the', 'planet', 'yet', 'it', 'still', 'could']
-augmented sentence: ['5', 'reasons', 'the', 'supreme', 'courts', 'recent', 'ruling', 'has', 'completely', 'destroyed', 'the', 'planet', 'yet', 'it', 'still', 'burns']
-2021-06-14 15:38:47,627 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['ways', 'be', 'protections']
-POS of replace tokens: ['NNS', 'VB', 'NNS']
-new tokens: ['signs', 'prove', 'what']
-POS of new tokens: ['NNS', 'NN', 'WP']
-original sentence: ['here', 'are', 'all', 'the', 'ways', 'the', 'gop', 'health', 'care', 'bill', 'would', 'be', 'devastating', 'to', 'mothers', 'allowing', 'states', 'to', 'decide', 'whether', 'or', 'not', 'theyd', 'waive', 'protections', 'allows', 'for', 'discrimination']
-augmented sentence: ['here', 'are', 'all', 'the', 'signs', 'the', 'gop', 'health', 'care', 'bill', 'would', 'prove', 'devastating', 'to', 'mothers', 'allowing', 'states', 'to', 'decide', 'whether', 'or', 'not', 'theyd', 'waive', 'what', 'allows', 'for', 'discrimination']
-2021-06-14 15:38:48,014 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['in', '3day', 'd']
-POS of replace tokens: ['IN', 'CD', 'NN']
-new tokens: ['`', 'extra', 'ud']
-POS of new tokens: ['``', 'JJ', 'NN']
-original sentence: ['president', 'ruins', 'd', 'c', 's', 'plan', 'to', 'phone', 'it', 'in', 'this', 'week', 'so', 'much', 'for', 'that', '3day', 'week']
-augmented sentence: ['president', 'ruins', 'ud', 'c', 's', 'plan', 'to', 'phone', 'it', '`', 'this', 'week', 'so', 'much', 'for', 'that', 'extra', 'week']
-2021-06-14 15:38:48,483 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['check', 'addressing', 'thanksgiving']
-POS of replace tokens: ['NN', 'VBG', 'VBG']
-new tokens: ['tact', 'Several', 'easy']
-POS of new tokens: ['NN', 'JJ', 'JJ']
-original sentence: ['5', 'thanksgiving', 'mistakes', 'not', 'to', 'make', 'this', 'year', 'addressing', 'common', 'thanksgiving', 'pitfalls', 'can', 'help', 'keep', 'weight', 'in', 'check', 'and', 'help', 'start', 'off', 'the', 'holiday', 'season', 'on', 'the', 'right', 'foot', 'with', 'temptations', 'all', 'around', 'us', 'making', 'healthy', 'and', 'smart', 'food', 'choices', 'can', 'be', 'challenging']
-augmented sentence: ['5', 'easy', 'mistakes', 'not', 'to', 'make', 'this', 'year', 'Several', 'common', 'thanksgiving', 'pitfalls', 'can', 'help', 'keep', 'weight', 'in', 'tact', 'and', 'help', 'start', 'off', 'the', 'holiday', 'season', 'on', 'the', 'right', 'foot', 'with', 'temptations', 'all', 'around', 'us', 'making', 'healthy', 'and', 'smart', 'food', 'choices', 'can', 'be', 'challenging']
-2021-06-14 15:38:48,943 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['got', 'lost', 'i']
-POS of replace tokens: ['VBD', 'VBN', 'NN']
-new tokens: ['Have', 'losing', 'by']
-POS of new tokens: ['VB', 'VBG', 'IN']
-original sentence: ['i', 'lost', 'weight', 'after', 'being', 'diagnosed', 'with', 'type', '2', 'diabetes', 'jill', 'knapp', 'lost', '100', 'pounds', 'got', 'a', 'success', 'story', 'of', 'your', 'own', 'send', 'it', 'to', 'us', 'at', 'success', 'storieshuffingtonpost', 'com', 'and', 'you', 'could', 'be', 'featured', 'on', 'the', 'site']
-augmented sentence: ['by', 'losing', 'weight', 'after', 'being', 'diagnosed', 'with', 'type', '2', 'diabetes', 'jill', 'knapp', 'lost', '100', 'pounds', 'Have', 'a', 'success', 'story', 'of', 'your', 'own', 'send', 'it', 'to', 'us', 'at', 'success', 'storieshuffingtonpost', 'com', 'and', 'you', 'could', 'be', 'featured', 'on', 'the', 'site']
-2021-06-14 15:38:49,467 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['middle', 'and', 'biased']
+new tokens: ['reasoning', 'Stress', 'concept']
+POS of new tokens: ['VBG', 'NN', 'NN']
+original sentence: ['there', 'is', 'no', 'stress', 'in', 'life', 'the', 'reason', 'i', 'do', 'not', 'promote', 'particular', 'techniques', 'for', 'stress', 'control', 'is', 'because', 'i', 'have', 'come', 'to', 'see', 'a', 'simple', 'truth', 'there', 'is', 'no', 'stress', 'in', 'life', 'there', 'is', 'only', 'stress', 'in', 'our', 'thinking']
+augmented sentence: ['there', 'is', 'no', 'Stress', 'in', 'life', 'the', 'reasoning', 'i', 'do', 'not', 'promote', 'particular', 'techniques', 'for', 'stress', 'control', 'is', 'because', 'i', 'have', 'come', 'to', 'see', 'a', 'simple', 'concept', 'there', 'is', 'no', 'stress', 'in', 'life', 'there', 'is', 'only', 'stress', 'in', 'our', 'thinking']
+2021-06-14 15:43:59,626 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['james', 'seth', 'controversial']
+POS of replace tokens: ['NNS', 'NN', 'JJ']
+new tokens: ['de', 'el', 'available']
+POS of new tokens: ['NNS', 'NN', 'JJ']
+original sentence: ['seth', 'rogen', 'james', 'francos', 'new', 'movie', 'is', 'already', 'controversial']
+augmented sentence: ['el', 'rogen', 'de', 'francos', 'new', 'movie', 'is', 'already', 'available']
+2021-06-14 15:44:00,075 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['oktoberfest', 'germanys', 'celebration']
+POS of replace tokens: ['JJS', 'NN', 'NN']
+new tokens: ['fireworks', 'for', 'with']
+POS of new tokens: ['NNS', 'IN', 'IN']
+original sentence: ['munich', 'prepares', 'for', 'annual', 'oktoberfest', 'celebration', 'photos', 'the', 'festivities', 'will', 'kick', 'off', 'sept', '21', 'in', 'munich', 'where', 'preparations', 'are', 'already', 'underway', 'germanys', 'famous', 'beersoaked', 'celebration']
+augmented sentence: ['munich', 'prepares', 'for', 'annual', 'fireworks', 'with', 'photos', 'the', 'festivities', 'will', 'kick', 'off', 'sept', '21', 'in', 'munich', 'where', 'preparations', 'are', 'already', 'underway', 'for', 'famous', 'beersoaked', 'celebration']
+2021-06-14 15:44:00,834 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['correct', 'real', 'into']
+POS of replace tokens: ['NN', 'JJ', 'IN']
+new tokens: ['unrealistic', 'optim', 'off']
+POS of new tokens: ['JJ', 'NN', 'IN']
+original sentence: ['how', 'to', 'secure', 'overpriced', 'inconvenient', 'holiday', 'flights', 'for', 'your', 'kids', 'bribe', 'your', 'children', 'with', 'extra', 'legroom', 'if', 'they', 'provide', 'you', 'with', 'correct', 'final', 'exam', 'dates', 'you', 'will', 'have', 'to', 'text', 'them', 'incessantly', 'for', '34', 'weeks', 'before', 'they', 'respond', 'with', 'those', 'dates', 'because', 'it', 'is', 'a', 'real', 'effort', 'on', 'their', 'part', 'to', 'log', 'into', 'their', 'online', 'schedule']
+augmented sentence: ['how', 'to', 'secure', 'overpriced', 'inconvenient', 'holiday', 'flights', 'for', 'your', 'kids', 'bribe', 'your', 'children', 'with', 'extra', 'legroom', 'if', 'they', 'provide', 'you', 'with', 'unrealistic', 'final', 'exam', 'dates', 'you', 'will', 'have', 'to', 'text', 'them', 'incessantly', 'for', '34', 'weeks', 'before', 'they', 'respond', 'with', 'those', 'dates', 'because', 'it', 'is', 'a', 'optim', 'effort', 'on', 'their', 'part', 'to', 'log', 'off', 'their', 'online', 'schedule']
+2021-06-14 15:44:01,325 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['elected', 'or', 'dynasty']
+POS of replace tokens: ['VBN', 'CC', 'NN']
+new tokens: ['incoming', 'against', 'feud']
+POS of new tokens: ['VBG', 'IN', 'NN']
+original sentence: ['jeb', 'bush', 'vows', 'to', 'shake', 'up', 'the', 'culture', 'of', 'washington', 'if', 'elected', 'president', 'bush', 'has', 'been', 'eager', 'to', 'distance', 'himself', 'from', 'washington', 'or', 'any', 'appearance', 'of', 'continuing', 'a', 'political', 'dynasty']
+augmented sentence: ['jeb', 'bush', 'vows', 'to', 'shake', 'up', 'the', 'culture', 'of', 'washington', 'if', 'incoming', 'president', 'bush', 'has', 'been', 'eager', 'to', 'distance', 'himself', 'from', 'washington', 'against', 'any', 'appearance', 'of', 'continuing', 'a', 'political', 'feud']
+2021-06-14 15:44:01,861 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['stop', 'and', 'defined']
 POS of replace tokens: ['NN', 'CC', 'VBN']
-new tokens: ['billionaire', 'party', 'motivated']
+new tokens: ['restrict', '–', 'governed']
 POS of new tokens: ['NN', 'NN', 'VBN']
+original sentence: ['democrats', 'are', 'trying', 'to', 'stop', 'republicans', 'from', 'forcing', 'library', 'of', 'congress', 'to', 'use', 'term', 'illegal', 'alien', 'terms', 'and', 'how', 'they', 'are', 'defined', 'by', 'society', 'change', 'with', 'time']
+augmented sentence: ['democrats', 'are', 'trying', 'to', 'restrict', 'republicans', 'from', 'forcing', 'library', 'of', 'congress', 'to', 'use', 'term', 'illegal', 'alien', 'terms', '–', 'how', 'they', 'are', 'governed', 'by', 'society', 'change', 'with', 'time']
+2021-06-14 15:44:02,311 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['seriously', 'dinner', 'thanksgiving']
+POS of replace tokens: ['RB', 'NN', 'VBG']
+new tokens: ['carefully', 'decisions', 'custom']
+POS of new tokens: ['RB', 'NNS', 'NN']
+original sentence: ['thanksgiving', 'outfits', 'that', 'will', 'ensure', 'you', 'can', 'have', 'pie', 'and', 'cake', 'here', 'at', 'huffpost', 'style', 'we', 'take', 'thanksgiving', 'dinner', 'very', 'seriously', 'we', 'want', 'to', 'maximize', 'our', 'food', 'intake', 'and', 'the', 'best', 'way']
+augmented sentence: ['custom', 'outfits', 'that', 'will', 'ensure', 'you', 'can', 'have', 'pie', 'and', 'cake', 'here', 'at', 'huffpost', 'style', 'we', 'take', 'thanksgiving', 'decisions', 'very', 'carefully', 'we', 'want', 'to', 'maximize', 'our', 'food', 'intake', 'and', 'the', 'best', 'way']
+2021-06-14 15:44:02,758 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['run', 'open', 'hint']
+POS of replace tokens: ['VB', 'JJ', 'NN']
+new tokens: ['race', 'committing', 'insist']
+POS of new tokens: ['NN', 'VBG', 'NN']
+original sentence: ['oprah', 'and', 'stedman', 'hint', 'she', 'is', 'open', 'to', 'presidential', 'run', 'she', 'would', 'absolutely', 'do', 'it', 'oprahs', 'longtime', 'partner', 'said', 'in', 'response', 'to', 'pleas', 'for', 'her', 'to', 'run']
+augmented sentence: ['oprah', 'and', 'stedman', 'insist', 'she', 'is', 'committing', 'to', 'presidential', 'race', 'she', 'would', 'absolutely', 'do', 'it', 'oprahs', 'longtime', 'partner', 'said', 'in', 'response', 'to', 'pleas', 'for', 'her', 'to', 'run']
+2021-06-14 15:44:03,315 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['spousal', 'comment', 'in']
+POS of replace tokens: ['NN', 'NN', 'IN']
+new tokens: ['Scarborough', 'column', 'unc']
+POS of new tokens: ['NN', 'NN', 'NN']
+original sentence: ['donald', 'trumps', 'lawyer', 'apologizes', 'for', 'inarticulate', 'comment', 'about', 'spousal', 'rape', 'he', 'also', 'threatened', 'the', 'daily', 'beast', 'for', 'publishing', 'the', 'comment', 'in', 'the', 'first', 'place']
+augmented sentence: ['donald', 'trumps', 'lawyer', 'apologizes', 'for', 'inarticulate', 'column', 'about', 'Scarborough', 'rape', 'he', 'also', 'threatened', 'the', 'daily', 'beast', 'for', 'publishing', 'the', 'comment', 'unc', 'the', 'first', 'place']
+2021-06-14 15:44:03,701 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['fight', 'gop', 'legislative']
+POS of replace tokens: ['NN', 'NN', 'JJ']
+new tokens: ['resign', 'California', 'GOP']
+POS of new tokens: ['NN', 'NNP', 'NNP']
+original sentence: ['gop', 'infighting', 'explodes', 'into', 'open', 'over', 'stalled', 'legislative', 'agenda', 'republicans', 'did', 'few', 'things', 'but', 'fight', 'this', 'week']
+augmented sentence: ['California', 'infighting', 'explodes', 'into', 'open', 'over', 'stalled', 'GOP', 'agenda', 'republicans', 'did', 'few', 'things', 'but', 'resign', 'this', 'week']
+2021-06-14 15:44:05,005 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['surgery', 'his', 'emilio']
+POS of replace tokens: ['NN', 'PRP$', 'NN']
+new tokens: [',', 'actor', 'Carlos']
+POS of new tokens: [',', 'NN', 'NN']
+original sentence: ['martin', 'sheen', 'undergoes', 'quadruple', 'bypass', 'surgery', 'his', 'son', 'emilio', 'estevez', 'says', 'the', 'actor', 'is', 'recovering', 'and', 'should', 'be', 'home', 'by', 'christmas']
+augmented sentence: ['martin', 'sheen', 'undergoes', 'quadruple', 'bypass', ',', 'actor', 'son', 'Carlos', 'estevez', 'says', 'the', 'actor', 'is', 'recovering', 'and', 'should', 'be', 'home', 'by', 'christmas']
+2021-06-14 15:44:05,740 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['weekly', 'which', 'daily']
+POS of replace tokens: ['JJ', 'WDT', 'JJ']
+new tokens: ['daily', 'they', 'In']
+POS of new tokens: ['JJ', 'PRP', 'IN']
+original sentence: ['weekly', 'meditations', 'for', 'healthy', 'sex', 'sept', '2026', 'through', 'life', 'experience', 'we', 'gradually', 'learn', 'to', 'differentiate', 'between', 'the', 'ideals', 'values', 'and', 'principles', 'which', 'can', 'and', 'those', 'which', 'cannot', 'be', 'compromised']
+augmented sentence: ['In', 'meditations', 'for', 'healthy', 'sex', 'sept', '2026', 'through', 'life', 'experience', 'we', 'gradually', 'learn', 'to', 'differentiate', 'between', 'the', 'ideals', 'values', 'and', 'principles', 'they', 'can', 'and', 'those', 'which', 'cannot', 'be', 'compromised']
+2021-06-14 15:44:06,282 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['yet', '5', 'reasons']
+POS of replace tokens: ['RB', 'CD', 'NNS']
+new tokens: ['if', 'Four', 'of']
+POS of new tokens: ['IN', 'CD', 'IN']
+original sentence: ['5', 'reasons', 'the', 'supreme', 'courts', 'climate', 'ruling', 'has', 'not', 'destroyed', 'the', 'planet', 'yet', 'it', 'still', 'could']
+augmented sentence: ['Four', 'of', 'the', 'supreme', 'courts', 'climate', 'ruling', 'has', 'not', 'destroyed', 'the', 'planet', 'if', 'it', 'still', 'could']
+2021-06-14 15:44:06,977 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['allowing', 'would', 'waive']
+POS of replace tokens: ['VBG', 'MD', 'NN']
+new tokens: ['prompting', 'could', 'reproductive']
+POS of new tokens: ['VBG', 'MD', 'NN']
+original sentence: ['here', 'are', 'all', 'the', 'ways', 'the', 'gop', 'health', 'care', 'bill', 'would', 'be', 'devastating', 'to', 'mothers', 'allowing', 'states', 'to', 'decide', 'whether', 'or', 'not', 'theyd', 'waive', 'protections', 'allows', 'for', 'discrimination']
+augmented sentence: ['here', 'are', 'all', 'the', 'ways', 'the', 'gop', 'health', 'care', 'bill', 'could', 'be', 'devastating', 'to', 'mothers', 'prompting', 'states', 'to', 'decide', 'whether', 'or', 'not', 'theyd', 'reproductive', 'protections', 'allows', 'for', 'discrimination']
+2021-06-14 15:44:07,935 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['phone', 's', 'plan']
+POS of replace tokens: ['NN', 'NN', 'NN']
+new tokens: ['plug', 'x', 'want']
+POS of new tokens: ['NN', 'NN', 'NN']
+original sentence: ['president', 'ruins', 'd', 'c', 's', 'plan', 'to', 'phone', 'it', 'in', 'this', 'week', 'so', 'much', 'for', 'that', '3day', 'week']
+augmented sentence: ['president', 'ruins', 'd', 'c', 'x', 'want', 'to', 'plug', 'it', 'in', 'this', 'week', 'so', 'much', 'for', 'that', '3day', 'week']
+2021-06-14 15:44:08,558 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['start', 'right', 'in']
+POS of replace tokens: ['NN', 'NN', 'IN']
+new tokens: ['finish', 'same', 'ou']
+POS of new tokens: ['NN', 'JJ', 'NN']
+original sentence: ['5', 'thanksgiving', 'mistakes', 'not', 'to', 'make', 'this', 'year', 'addressing', 'common', 'thanksgiving', 'pitfalls', 'can', 'help', 'keep', 'weight', 'in', 'check', 'and', 'help', 'start', 'off', 'the', 'holiday', 'season', 'on', 'the', 'right', 'foot', 'with', 'temptations', 'all', 'around', 'us', 'making', 'healthy', 'and', 'smart', 'food', 'choices', 'can', 'be', 'challenging']
+augmented sentence: ['5', 'thanksgiving', 'mistakes', 'not', 'to', 'make', 'this', 'year', 'addressing', 'common', 'thanksgiving', 'pitfalls', 'can', 'help', 'keep', 'weight', 'ou', 'check', 'and', 'help', 'finish', 'off', 'the', 'holiday', 'season', 'on', 'the', 'same', 'foot', 'with', 'temptations', 'all', 'around', 'us', 'making', 'healthy', 'and', 'smart', 'food', 'choices', 'can', 'be', 'challenging']
+2021-06-14 15:44:09,238 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['storieshuffingtonpost', 'you', 'type']
+POS of replace tokens: ['NN', 'PRP', 'NN']
+new tokens: ['fly', 'your', 'diabetes']
+POS of new tokens: ['NN', 'PRP$', 'NNS']
+original sentence: ['i', 'lost', 'weight', 'after', 'being', 'diagnosed', 'with', 'type', '2', 'diabetes', 'jill', 'knapp', 'lost', '100', 'pounds', 'got', 'a', 'success', 'story', 'of', 'your', 'own', 'send', 'it', 'to', 'us', 'at', 'success', 'storieshuffingtonpost', 'com', 'and', 'you', 'could', 'be', 'featured', 'on', 'the', 'site']
+augmented sentence: ['i', 'lost', 'weight', 'after', 'being', 'diagnosed', 'with', 'diabetes', '2', 'diabetes', 'jill', 'knapp', 'lost', '100', 'pounds', 'got', 'a', 'success', 'story', 'of', 'your', 'own', 'send', 'it', 'to', 'us', 'at', 'success', 'fly', 'com', 'and', 'your', 'could', 'be', 'featured', 'on', 'the', 'site']
+2021-06-14 15:44:09,942 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['and', 'poor', 'their']
+POS of replace tokens: ['CC', 'JJ', 'PRP$']
+new tokens: ['Republican', 'rich', 'his']
+POS of new tokens: ['JJ', 'JJ', 'PRP$']
 original sentence: ['how', 'racism', 'is', 'destroying', 'the', 'middle', 'class', 'while', 'the', 'tea', 'party', 'and', 'republicans', 'have', 'denied', 'that', 'their', 'war', 'on', 'the', 'poor', 'is', 'not', 'racially', 'biased', 'they', 'occasionally', 'slip', 'up']
-augmented sentence: ['how', 'racism', 'is', 'destroying', 'the', 'billionaire', 'class', 'while', 'the', 'tea', 'party', 'party', 'republicans', 'have', 'denied', 'that', 'their', 'war', 'on', 'the', 'poor', 'is', 'not', 'racially', 'motivated', 'they', 'occasionally', 'slip', 'up']
-2021-06-14 15:38:49,849 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['eat', 'and', 'festivals']
-POS of replace tokens: ['NN', 'CC', 'NNS']
-new tokens: ['picnic', ',', 'festival']
-POS of new tokens: ['NN', ',', 'NN']
+augmented sentence: ['how', 'racism', 'is', 'destroying', 'the', 'middle', 'class', 'while', 'the', 'tea', 'party', 'Republican', 'republicans', 'have', 'denied', 'that', 'his', 'war', 'on', 'the', 'rich', 'is', 'not', 'racially', 'biased', 'they', 'occasionally', 'slip', 'up']
+2021-06-14 15:44:10,536 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['better', 'festival', 'festivals']
+POS of replace tokens: ['RBR', 'NN', 'NNS']
+new tokens: ['easier', 'fair', 'destinations']
+POS of new tokens: ['JJR', 'NN', 'NNS']
 original sentence: ['the', 'best', 'remaining', 'summer', 'food', 'festivals', 'in', 'america', 'there', 'is', 'no', 'better', 'time', 'to', 'eat', 'and', 'drink', 'around', 'the', 'country', 'than', 'festival', 'season']
-augmented sentence: ['the', 'best', 'remaining', 'summer', 'food', 'festival', 'in', 'america', 'there', 'is', 'no', 'better', 'time', 'to', 'picnic', ',', 'drink', 'around', 'the', 'country', 'than', 'festival', 'season']
-2021-06-14 15:38:51,257 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['not', 'chanting', 'was']
-POS of replace tokens: ['RB', 'VBG', 'VBD']
-new tokens: ['oblig', 'music', 'loved']
-POS of new tokens: ['NN', 'NN', 'VBN']
+augmented sentence: ['the', 'best', 'remaining', 'summer', 'food', 'destinations', 'in', 'america', 'there', 'is', 'no', 'easier', 'time', 'to', 'eat', 'and', 'drink', 'around', 'the', 'country', 'than', 'fair', 'season']
+2021-06-14 15:44:12,305 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['photo', 'was', 'thought']
+POS of replace tokens: ['NN', 'VBD', 'NN']
+new tokens: ['h', 'thought', 'am']
+POS of new tokens: ['NN', 'NN', 'VBP']
 original sentence: ['the', 'golden', 'temple', 'at', 'amritsar', 'a', 'shoefree', 'shrine', 'photos', 'a', 'sikh', 'friend', 'had', 'asked', 'me', 'to', 'note', 'the', 'peaceful', 'atmosphere', 'at', 'the', 'temple', 'between', 'photo', 'opportunities', 'chats', 'about', 'cricket', 'and', 'the', 'chanting', 'marching', 'out', 'of', 'the', 'loudspeaker', 'system', 'i', 'was', 'enjoying', 'the', 'temple', 'this', 'was', 'not', 'easy', 'advice', 'to', 'follow']
-augmented sentence: ['the', 'golden', 'temple', 'at', 'amritsar', 'a', 'shoefree', 'shrine', 'photos', 'a', 'sikh', 'friend', 'had', 'asked', 'me', 'to', 'note', 'the', 'peaceful', 'atmosphere', 'at', 'the', 'temple', 'between', 'photo', 'opportunities', 'chats', 'about', 'cricket', 'and', 'the', 'music', 'marching', 'out', 'of', 'the', 'loudspeaker', 'system', 'i', 'loved', 'enjoying', 'the', 'temple', 'this', 'was', 'oblig', 'easy', 'advice', 'to', 'follow']
-2021-06-14 15:38:51,575 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['in', 'and', 'u']
-POS of replace tokens: ['IN', 'CC', 'NN']
-new tokens: ['u', 'so', 'uv']
-POS of new tokens: ['NN', 'RB', 'NN']
+augmented sentence: ['the', 'golden', 'temple', 'at', 'amritsar', 'a', 'shoefree', 'shrine', 'photos', 'a', 'sikh', 'friend', 'had', 'asked', 'me', 'to', 'note', 'the', 'peaceful', 'atmosphere', 'at', 'the', 'temple', 'between', 'h', 'opportunities', 'chats', 'about', 'cricket', 'and', 'the', 'chanting', 'marching', 'out', 'of', 'the', 'loudspeaker', 'system', 'i', 'am', 'enjoying', 'the', 'temple', 'this', 'was', 'not', 'easy', 'advice', 'to', 'follow']
+2021-06-14 15:44:12,918 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['american', 'and', 'in']
+POS of replace tokens: ['JJ', 'CC', 'IN']
+new tokens: ['flawed', '–', 'per']
+POS of new tokens: ['VBN', 'NN', 'IN']
 original sentence: ['dreamers', 'are', 'our', 'students', 'and', 'we', 'must', 'protect', 'them', 'these', 'individuals', 'are', 'american', 'in', 'every', 'way']
-augmented sentence: ['dreamers', 'are', 'our', 'students', 'so', 'we', 'must', 'protect', 'them', 'these', 'individuals', 'are', 'american', 'uv', 'every', 'way']
-2021-06-14 15:38:52,080 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['it', 'i', 'it']
-POS of replace tokens: ['PRP', 'NN', 'PRP']
-new tokens: ['ann', 'haus', 'ist']
-POS of new tokens: ['NN', 'NN', 'NN']
+augmented sentence: ['dreamers', 'are', 'our', 'students', '–', 'we', 'must', 'protect', 'them', 'these', 'individuals', 'are', 'flawed', 'per', 'every', 'way']
+2021-06-14 15:44:13,821 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['show', 'granny', 'prison']
+POS of replace tokens: ['NN', 'NN', 'NN']
+new tokens: ['courtroom', 'bout', 'suits']
+POS of new tokens: ['NN', 'NN', 'NNS']
 original sentence: ['jenn', 'rogien', 'orange', 'is', 'the', 'new', 'black', 'costume', 'designer', 'talks', 'granny', 'panties', 'and', 'maxi', 'pads', 'i', 'have', 'to', 'ask', 'about', 'the', 'lingerie', 'situation', 'in', 'prison', 'because', 'it', 'is', 'never', 'explicitly', 'dealt', 'with', 'in', 'the', 'show', 'is', 'it', 'standard']
-augmented sentence: ['jenn', 'rogien', 'orange', 'is', 'the', 'new', 'black', 'costume', 'designer', 'talks', 'granny', 'panties', 'and', 'maxi', 'pads', 'haus', 'have', 'to', 'ask', 'about', 'the', 'lingerie', 'situation', 'in', 'prison', 'because', 'ann', 'is', 'never', 'explicitly', 'dealt', 'with', 'in', 'the', 'show', 'is', 'ist', 'standard']
-2021-06-14 15:38:52,531 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['on', 'lays', 'cnns']
-POS of replace tokens: ['IN', 'NNS', 'NN']
-new tokens: ['ation', 'laid', 'fellow']
-POS of new tokens: ['NN', 'NN', 'NN']
+augmented sentence: ['jenn', 'rogien', 'orange', 'is', 'the', 'new', 'black', 'costume', 'designer', 'talks', 'bout', 'panties', 'and', 'maxi', 'pads', 'i', 'have', 'to', 'ask', 'about', 'the', 'lingerie', 'situation', 'in', 'suits', 'because', 'it', 'is', 'never', 'explicitly', 'dealt', 'with', 'in', 'the', 'courtroom', 'is', 'it', 'standard']
+2021-06-14 15:44:14,411 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['president', 'illegal', 'of']
+POS of replace tokens: ['NN', 'JJ', 'IN']
+new tokens: ['illegal', 'DACA', 'starting']
+POS of new tokens: ['JJ', 'NN', 'VBG']
 original sentence: ['rubio', 'lays', 'out', 'new', 'hardline', 'position', 'on', 'immigration', 'in', 'an', 'interview', 'with', 'cnns', 'jake', 'tapper', 'rubio', 'clarified', 'that', 'on', 'day', 'one', 'of', 'his', 'presidency', 'he', 'will', 'end', 'president', 'obamas']
-augmented sentence: ['rubio', 'laid', 'out', 'new', 'hardline', 'position', 'ation', 'immigration', 'in', 'an', 'interview', 'with', 'fellow', 'jake', 'tapper', 'rubio', 'clarified', 'that', 'on', 'day', 'one', 'of', 'his', 'presidency', 'he', 'will', 'end', 'president', 'obamas']
-2021-06-14 15:38:52,979 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['hands', 'straight', 'it']
-POS of replace tokens: ['NNS', 'NN', 'PRP']
-new tokens: ['brushes', 'insanely', 'oud']
-POS of new tokens: ['NNS', 'RB', 'NN']
+augmented sentence: ['rubio', 'lays', 'out', 'new', 'hardline', 'position', 'on', 'immigration', 'in', 'an', 'interview', 'with', 'cnns', 'jake', 'tapper', 'rubio', 'clarified', 'that', 'on', 'day', 'one', 'starting', 'his', 'presidency', 'he', 'will', 'end', 'DACA', 'obamas']
+2021-06-14 15:44:14,867 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['fine', '12', 'braid']
+POS of replace tokens: ['NN', 'CD', 'NN']
+new tokens: ['blonde', 'beauty', 'closet']
+POS of new tokens: ['NN', 'NN', 'NN']
 original sentence: ['12', 'tricks', 'that', 'girls', 'with', 'straight', 'fine', 'hair', 'should', 'know', 'just', 'sleep', 'with', 'it', 'in', 'a', 'braid', 'friends', 'have', 'told', 'me', 'just', 'use', 'some', 'mousse', 'and', 'scrunch', 'it', 'with', 'your', 'hands', 'others', 'have']
-augmented sentence: ['12', 'tricks', 'that', 'girls', 'with', 'insanely', 'fine', 'hair', 'should', 'know', 'just', 'sleep', 'with', 'oud', 'in', 'a', 'braid', 'friends', 'have', 'told', 'me', 'just', 'use', 'some', 'mousse', 'and', 'scrunch', 'it', 'with', 'your', 'brushes', 'others', 'have']
-2021-06-14 15:38:53,371 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['life', 'on', 'orbit']
-POS of replace tokens: ['NN', 'IN', 'NN']
-new tokens: ['orbit', 'spaceship', 'travel']
+augmented sentence: ['beauty', 'tricks', 'that', 'girls', 'with', 'straight', 'blonde', 'hair', 'should', 'know', 'just', 'sleep', 'with', 'it', 'in', 'a', 'closet', 'friends', 'have', 'told', 'me', 'just', 'use', 'some', 'mousse', 'and', 'scrunch', 'it', 'with', 'your', 'hands', 'others', 'have']
+2021-06-14 15:44:15,383 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['touch', 'life', 'with']
+POS of replace tokens: ['NN', 'NN', 'IN']
+new tokens: ['splash', 'market', '|']
 POS of new tokens: ['NN', 'NN', 'NN']
 original sentence: ['space', 'shuttle', 'atlantis', 'attraction', 'lifts', 'off', 'in', 'florida', 'photos', 'on', 'orbit', 'gallery', 'a', '24footlong', 'interactive', 'timeline', 'brings', 'nasas', '135', 'space', 'shuttle', 'missions', 'to', 'life', 'with', 'touch', 'screen']
-augmented sentence: ['space', 'shuttle', 'atlantis', 'attraction', 'lifts', 'off', 'in', 'florida', 'photos', 'spaceship', 'travel', 'gallery', 'a', '24footlong', 'interactive', 'timeline', 'brings', 'nasas', '135', 'space', 'shuttle', 'missions', 'to', 'orbit', 'with', 'touch', 'screen']
-2021-06-14 15:38:53,830 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['swift', 'just', 'still']
-POS of replace tokens: ['NN', 'RB', 'RB']
-new tokens: ['massive', 'to', 'president']
-POS of new tokens: ['JJ', 'TO', 'NN']
+augmented sentence: ['space', 'shuttle', 'atlantis', 'attraction', 'lifts', 'off', 'in', 'florida', 'photos', 'on', 'orbit', 'gallery', 'a', '24footlong', 'interactive', 'timeline', 'brings', 'nasas', '135', 'space', 'shuttle', 'missions', 'to', 'market', '|', 'splash', 'screen']
+2021-06-14 15:44:15,688 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['trump', 'swift', 'just']
+POS of replace tokens: ['NN', 'NN', 'RB']
+new tokens: ['son', 'furious', '–']
+POS of new tokens: ['NN', 'JJ', 'NN']
 original sentence: ['donald', 'trump', 'still', 'thinks', 'obama', 'is', 'a', 'muslim', 'prompts', 'swift', 'backlash', 'just', 'move', 'on']
-augmented sentence: ['donald', 'trump', 'president', 'thinks', 'obama', 'is', 'a', 'muslim', 'prompts', 'massive', 'backlash', 'to', 'move', 'on']
-2021-06-14 15:38:54,319 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['very', 'confident', 'hopeful']
-POS of replace tokens: ['RB', 'NN', 'NN']
-new tokens: ['a', 'hopeful', 'concerned']
-POS of new tokens: ['DT', 'NN', 'JJ']
+augmented sentence: ['donald', 'son', 'still', 'thinks', 'obama', 'is', 'a', 'muslim', 'prompts', 'furious', 'backlash', '–', 'move', 'on']
+2021-06-14 15:44:16,127 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['challenges', 'facing', 'of']
+POS of replace tokens: ['NNS', 'VBG', 'IN']
+new tokens: ['issues', 'fighting', 'breast']
+POS of new tokens: ['NNS', 'VBG', 'NN']
 original sentence: ['john', 'mccain', 'says', 'he', 'is', 'facing', 'very', 'virulent', 'form', 'of', 'cancer', 'im', 'facing', 'a', 'challenge', 'but', 'ive', 'faced', 'other', 'challenges', 'and', 'im', 'very', 'confident', 'about', 'getting', 'through', 'this', 'one', 'as', 'well']
-augmented sentence: ['john', 'mccain', 'says', 'he', 'is', 'facing', 'a', 'virulent', 'form', 'of', 'cancer', 'im', 'facing', 'a', 'challenge', 'but', 'ive', 'faced', 'other', 'challenges', 'and', 'im', 'very', 'concerned', 'about', 'getting', 'through', 'this', 'one', 'as', 'well']
-2021-06-14 15:38:54,768 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['playbook', 'pipeline', 'your']
-POS of replace tokens: ['NN', 'NN', 'PRP$']
-new tokens: ['penchant', 'violent', 'involving']
-POS of new tokens: ['NN', 'NN', 'VBG']
+augmented sentence: ['john', 'mccain', 'says', 'he', 'is', 'fighting', 'very', 'virulent', 'form', 'breast', 'cancer', 'im', 'facing', 'a', 'challenge', 'but', 'ive', 'faced', 'other', 'issues', 'and', 'im', 'very', 'confident', 'about', 'getting', 'through', 'this', 'one', 'as', 'well']
+2021-06-14 15:44:16,866 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['gas', '10000', 'fights']
+POS of replace tokens: ['NN', 'CD', 'NNS']
+new tokens: ['shale', '150', 'war']
+POS of new tokens: ['NN', 'CD', 'NN']
 original sentence: ['leaked', 'powerpoint', 'reveals', 'the', 'gas', 'industrys', 'playbook', 'for', 'waging', 'pipeline', 'fights', 'your', 'energy', 'an', 'industry', 'front', 'group', 'claims', 'to', 'have', 'recruited', '10000', 'people', 'to', 'its', 'cause', 'of', 'battling', 'pipeline', 'protesters']
-augmented sentence: ['leaked', 'powerpoint', 'reveals', 'the', 'gas', 'industrys', 'penchant', 'for', 'waging', 'violent', 'fights', 'involving', 'energy', 'an', 'industry', 'front', 'group', 'claims', 'to', 'have', 'recruited', '10000', 'people', 'to', 'its', 'cause', 'of', 'battling', 'pipeline', 'protesters']
-2021-06-14 15:38:55,381 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['they', 'not', 'pink']
-POS of replace tokens: ['PRP', 'RB', 'NN']
-new tokens: ['wrinkles', 'they', 'brown']
-POS of new tokens: ['NNS', 'PRP', 'NN']
-original sentence: ['do', 'not', 'diagnose', 'drug', 'allergies', 'over', 'the', 'phone', 'it', 'is', 'not', 'a', 'good', 'idea', 'to', 'diagnose', 'drug', 'allergies', 'without', 'seeing', 'the', 'patient', 'first', 'it', 'is', 'very', 'difficult', 'to', 'describe', 'a', 'rash', 'over', 'the', 'phone', 'are', 'the', 'spots', 'pink', 'or', 'red', 'are', 'they', 'raised', 'or', 'flat', 'are', 'they', 'isolated', 'or', 'do', 'they', 'appear', 'in', 'groups']
-augmented sentence: ['do', 'they', 'diagnose', 'drug', 'allergies', 'over', 'the', 'phone', 'it', 'is', 'not', 'a', 'good', 'idea', 'to', 'diagnose', 'drug', 'allergies', 'without', 'seeing', 'the', 'patient', 'first', 'it', 'is', 'very', 'difficult', 'to', 'describe', 'a', 'rash', 'over', 'the', 'phone', 'are', 'the', 'spots', 'brown', 'or', 'red', 'are', 'wrinkles', 'raised', 'or', 'flat', 'are', 'they', 'isolated', 'or', 'do', 'they', 'appear', 'in', 'groups']
-2021-06-14 15:38:55,752 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['oneyear', 'emergency', 'of']
-POS of replace tokens: ['NN', 'NN', 'IN']
-new tokens: ['fourth', 'calm', 'emergency']
-POS of new tokens: ['JJ', 'NN', 'NN']
-original sentence: ['state', 'of', 'emergency', 'ends', 'in', 'ferguson', 'the', 'state', 'of', 'emergency', 'went', 'into', 'effect', 'in', 'response', 'to', 'demonstrations', 'marking', 'the', 'oneyear', 'anniversary', 'of', 'the', 'shooting', 'death', 'of', 'mike', 'brown']
-augmented sentence: ['state', 'emergency', 'calm', 'ends', 'in', 'ferguson', 'the', 'state', 'of', 'emergency', 'went', 'into', 'effect', 'in', 'response', 'to', 'demonstrations', 'marking', 'the', 'fourth', 'anniversary', 'of', 'the', 'shooting', 'death', 'of', 'mike', 'brown']
-2021-06-14 15:38:57,022 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['my', 'restraint', 'whoop']
-POS of replace tokens: ['PRP$', 'NN', 'NN']
-new tokens: ['his', 'beers', 'shit']
-POS of new tokens: ['PRP$', 'NNS', 'NN']
-original sentence: ['a', 'ritual', 'of', 'refreshing', 'restraint', 'i', 'went', 'to', 'my', 'first', 'japanese', 'tea', 'ceremony', 'today', 'actually', 'it', 'was', 'my', 'first', 'tea', 'ceremony', 'period', 'big', 'whoop', 'you', 'might', 'think', 'except', 'that', 'six', 'months', 'ago', 'i', 'would', 'have', 'balked', 'at', 'such', 'an', 'opportunity', 'before', 'moving', 'to', 'singapore', 'last', 'year', 'i', 'was', 'an', 'avowed', 'antiteaite']
-augmented sentence: ['a', 'ritual', 'of', 'refreshing', 'beers', 'i', 'went', 'to', 'his', 'first', 'japanese', 'tea', 'ceremony', 'today', 'actually', 'it', 'was', 'my', 'first', 'tea', 'ceremony', 'period', 'big', 'shit', 'you', 'might', 'think', 'except', 'that', 'six', 'months', 'ago', 'i', 'would', 'have', 'balked', 'at', 'such', 'an', 'opportunity', 'before', 'moving', 'to', 'singapore', 'last', 'year', 'i', 'was', 'an', 'avowed', 'antiteaite']
-2021-06-14 15:38:57,676 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['years', 'special', 'asked']
-POS of replace tokens: ['NNS', 'JJ', 'VBN']
-new tokens: ['year', 'big', 'back']
-POS of new tokens: ['NN', 'JJ', 'RB']
-original sentence: ['access', 'your', 'dream', 'career', 'today', 'when', 'i', 'started', 'my', 'business', 'over', 'three', 'years', 'ago', 'i', 'had', 'been', 'searching', 'for', 'years', 'and', 'then', 'one', 'day', 'i', 'got', 'asked', 'a', 'special', 'question', 'that', 'helped', 'put', 'me', 'on', 'the', 'career', 'path', 'of', 'my', 'dreams', 'i', 'hope', 'you', 'find', 'that', 'this', 'video', 'can', 'help', 'you', 'on', 'your', 'career', 'journey', 'as', 'well']
-augmented sentence: ['access', 'your', 'dream', 'career', 'today', 'when', 'i', 'started', 'my', 'business', 'over', 'three', 'year', 'ago', 'i', 'had', 'been', 'searching', 'for', 'years', 'and', 'then', 'one', 'day', 'i', 'got', 'back', 'a', 'big', 'question', 'that', 'helped', 'put', 'me', 'on', 'the', 'career', 'path', 'of', 'my', 'dreams', 'i', 'hope', 'you', 'find', 'that', 'this', 'video', 'can', 'help', 'you', 'on', 'your', 'career', 'journey', 'as', 'well']
-2021-06-14 15:38:58,079 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['sanders', 'place', 'debate']
-POS of replace tokens: ['NNS', 'NN', 'NN']
-new tokens: [',', 'best', 'be']
-POS of new tokens: [',', 'JJS', 'VB']
-original sentence: ['donald', 'trump', 'will', 'not', 'debate', 'second', 'place', 'finisher', 'bernie', 'sanders', 'he', 'will', 'just', 'have', 'to', 'debate', 'the', 'first', 'place', 'finisher', 'probably', 'crooked', 'hillary', 'clinton']
-augmented sentence: ['donald', 'trump', 'will', 'not', 'be', 'second', 'best', 'finisher', 'bernie', ',', 'he', 'will', 'just', 'have', 'to', 'debate', 'the', 'first', 'place', 'finisher', 'probably', 'crooked', 'hillary', 'clinton']
-2021-06-14 15:38:58,478 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['final', 'showrunner', 'because']
-POS of replace tokens: ['JJ', 'NN', 'IN']
-new tokens: ['seventh', 'EP', 'so']
-POS of new tokens: ['NN', 'NN', 'RB']
-original sentence: ['vampire', 'diaries', 'showrunner', 'teases', 'possibility', 'of', 'nina', 'dobrevs', 'return', 'because', 'we', 'all', 'know', 'the', 'final', 'season', 'would', 'not', 'be', 'the', 'same', 'without', 'her']
-augmented sentence: ['vampire', 'diaries', 'EP', 'teases', 'possibility', 'of', 'nina', 'dobrevs', 'return', 'so', 'we', 'all', 'know', 'the', 'seventh', 'season', 'would', 'not', 'be', 'the', 'same', 'without', 'her']
-2021-06-14 15:38:58,920 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['our', 'why', 'program']
-POS of replace tokens: ['PRP$', 'WRB', 'NN']
-new tokens: ['her', 'where', 'but']
-POS of new tokens: ['PRP$', 'WRB', 'CC']
-original sentence: ['former', 'cia', 'detainees', 'are', 'suing', 'the', 'psychologists', 'who', 'developed', 'the', 'torture', 'program', 'an', 'aclu', 'lawyer', 'representing', 'the', 'former', 'detainees', 'says', 'the', 'senate', 'torture', 'report', 'is', 'really', 'why', 'our', 'clients', 'are', 'able', 'to', 'pursue', 'this', 'case']
-augmented sentence: ['former', 'cia', 'detainees', 'are', 'suing', 'the', 'psychologists', 'who', 'developed', 'the', 'torture', 'but', 'an', 'aclu', 'lawyer', 'representing', 'the', 'former', 'detainees', 'says', 'the', 'senate', 'torture', 'report', 'is', 'really', 'where', 'her', 'clients', 'are', 'able', 'to', 'pursue', 'this', 'case']
-2021-06-14 15:38:59,238 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['always', 'in', 'of']
-POS of replace tokens: ['RB', 'IN', 'IN']
-new tokens: ['filming', 'lt', 'in']
-POS of new tokens: ['VBG', 'NN', 'IN']
-original sentence: ['take', 'a', 'look', 'behind', 'the', 'scenes', 'of', 'the', 'secret', 'service', 'they', 'are', 'always', 'in', 'the', 'background']
-augmented sentence: ['take', 'a', 'look', 'behind', 'the', 'scenes', 'in', 'the', 'secret', 'service', 'they', 'are', 'filming', 'lt', 'the', 'background']
-2021-06-14 15:38:59,580 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['for', 'or', 'will']
-POS of replace tokens: ['IN', 'CC', 'MD']
-new tokens: ['or', 'but', 'can']
-POS of new tokens: ['CC', 'CC', 'MD']
-original sentence: ['mark', 'kirk', 'will', 'not', 'say', 'who', 'has', 'his', 'vote', 'for', 'president', 'the', 'republican', 'senator', 'has', 'now', 'changed', 'his', 'mind', 'four', 'times']
-augmented sentence: ['mark', 'kirk', 'can', 'not', 'say', 'who', 'has', 'his', 'vote', 'but', 'president', 'the', 'republican', 'senator', 'has', 'now', 'changed', 'his', 'mind', 'four', 'times']
-2021-06-14 15:39:00,219 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['worse', 'about', 'bad']
-POS of replace tokens: ['JJR', 'IN', 'JJ']
-new tokens: ['bad', 'or', 'cheated']
-POS of new tokens: ['JJ', 'CC', 'VBN']
-original sentence: ['this', 'years', 'primary', 'left', 'most', 'voters', 'with', 'a', 'lower', 'opinion', 'of', 'the', 'gop', 'even', 'republicans', 'are', 'more', 'likely', 'to', 'feel', 'worse', 'than', 'better', 'about', 'their', 'party']
-augmented sentence: ['this', 'years', 'primary', 'left', 'most', 'voters', 'with', 'a', 'lower', 'opinion', 'of', 'the', 'gop', 'even', 'republicans', 'are', 'more', 'likely', 'to', 'feel', 'cheated', 'than', 'better', 'or', 'their', 'party']
-2021-06-14 15:39:00,777 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['foliage', 'earns', 'for']
-POS of replace tokens: ['NN', 'NNS', 'IN']
-new tokens: ['trees', 'holds', 'behind']
-POS of new tokens: ['NNS', 'VBZ', 'IN']
-original sentence: ['when', 'and', 'where', 'to', 'find', 'falls', 'most', 'fantastic', 'foliage', 'infographic', 'get', 'going', 'soon', 'to', 'catch', 'octobers', 'glory', 'in', 'the', 'northeast', 'states', 'where', 'new', 'england', 'earns', 'its', 'reputation', 'for', 'spectacular', 'fall', 'foliage']
-augmented sentence: ['when', 'and', 'where', 'to', 'find', 'falls', 'most', 'fantastic', 'trees', 'infographic', 'get', 'going', 'soon', 'to', 'catch', 'octobers', 'glory', 'in', 'the', 'northeast', 'states', 'where', 'new', 'england', 'holds', 'its', 'reputation', 'behind', 'spectacular', 'fall', 'foliage']
-2021-06-14 15:39:01,099 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['stage', 'speaker', 'watch']
-POS of replace tokens: ['NN', 'NN', 'NN']
-new tokens: ['crown', 'wives', 'Before']
-POS of new tokens: ['NN', 'NNS', 'IN']
-original sentence: ['watch', 'the', '2016', 'republican', 'national', 'convention', 'live', 'house', 'speaker', 'paul', 'ryan', 'is', 'set', 'to', 'take', 'the', 'stage']
-augmented sentence: ['Before', 'the', '2016', 'republican', 'national', 'convention', 'live', 'house', 'wives', 'paul', 'ryan', 'is', 'set', 'to', 'take', 'the', 'crown']
-2021-06-14 15:39:01,560 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['sanders', 'over', 'should']
-POS of replace tokens: ['NNS', 'IN', 'MD']
-new tokens: ['Jones', 'deciding', 'shall']
-POS of new tokens: ['NNP', 'VBG', 'MD']
-original sentence: ['bernie', 'sanders', 'campaign', 'is', 'split', 'over', 'whether', 'to', 'fight', 'on', 'past', 'tuesday', 'a', 'split', 'is', 'emerging', 'inside', 'the', 'bernie', 'sanders', 'campaign', 'over', 'whether', 'the', 'senator', 'should', 'stand', 'down', 'after', 'tuesdays', 'election']
-augmented sentence: ['bernie', 'Jones', 'campaign', 'is', 'split', 'deciding', 'whether', 'to', 'fight', 'on', 'past', 'tuesday', 'a', 'split', 'is', 'emerging', 'inside', 'the', 'bernie', 'sanders', 'campaign', 'over', 'whether', 'the', 'senator', 'shall', 'stand', 'down', 'after', 'tuesdays', 'election']
-2021-06-14 15:39:01,792 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['who', 'messy', 'eater']
-POS of replace tokens: ['WP', 'NN', 'NN']
-new tokens: ['What', 'meat', 'ball']
-POS of new tokens: ['WP', 'NN', 'NN']
-original sentence: ['guess', 'who', 'this', 'messy', 'eater', 'turned', 'into']
-augmented sentence: ['guess', 'What', 'this', 'meat', 'ball', 'turned', 'into']
-2021-06-14 15:39:02,236 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['brothers', 'spokesman', 'involved']
-POS of replace tokens: ['NNS', 'NN', 'VBN']
-new tokens: ['mafia', 'campaigned', 'trump']
-POS of new tokens: ['NN', 'VBN', 'NN']
-original sentence: ['koch', 'brothers', 'will', 'not', 'spend', 'money', 'to', 'attack', 'donald', 'trump', 'in', 'primary', 'we', 'have', 'no', 'plans', 'to', 'get', 'involved', 'in', 'the', 'primary', 'said', 'james', 'davis', 'spokesman', 'for', 'freedom', 'partners', 'the', 'koch', 'brothers', 'political', 'umbrella', 'group']
-augmented sentence: ['koch', 'mafia', 'will', 'not', 'spend', 'money', 'to', 'attack', 'donald', 'trump', 'in', 'primary', 'we', 'have', 'no', 'plans', 'to', 'get', 'trump', 'in', 'the', 'primary', 'said', 'james', 'davis', 'campaigned', 'for', 'freedom', 'partners', 'the', 'koch', 'brothers', 'political', 'umbrella', 'group']
-2021-06-14 15:39:02,770 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['of', 'his', 'donald']
-POS of replace tokens: ['IN', 'PRP$', 'NN']
-new tokens: ['defeats', 'her', 'ambition']
-POS of new tokens: ['NNS', 'PRP$', 'NN']
-original sentence: ['the', 'unhappy', 'campaign', 'of', 'paul', 'manafort', 'he', 'overestimated', 'his', 'own', 'skill', 'set', 'and', 'donald', 'trumps', 'sanity', 'and', 'underestimated', 'his', 'enemies', 'and', 'the', 'political', 'danger', 'of', 'his', 'ukraine', 'ties']
-augmented sentence: ['the', 'unhappy', 'campaign', 'defeats', 'paul', 'manafort', 'he', 'overestimated', 'her', 'own', 'skill', 'set', 'and', 'ambition', 'trumps', 'sanity', 'and', 'underestimated', 'his', 'enemies', 'and', 'the', 'political', 'danger', 'of', 'his', 'ukraine', 'ties']
-2021-06-14 15:39:03,326 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['foods', 'you', 'you']
-POS of replace tokens: ['NNS', 'PRP', 'PRP']
-new tokens: ['diets', 'faire', 'concent']
+augmented sentence: ['leaked', 'powerpoint', 'reveals', 'the', 'shale', 'industrys', 'playbook', 'for', 'waging', 'pipeline', 'war', 'your', 'energy', 'an', 'industry', 'front', 'group', 'claims', 'to', 'have', 'recruited', '150', 'people', 'to', 'its', 'cause', 'of', 'battling', 'pipeline', 'protesters']
+2021-06-14 15:44:17,467 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['they', 'red', 'pink']
+POS of replace tokens: ['PRP', 'JJ', 'NN']
+new tokens: ['spots', 'darker', 'bright']
 POS of new tokens: ['NNS', 'NN', 'NN']
-original sentence: ['the', 'perfect', 'weightloss', 'romance', 'diet', 'meets', 'exercise', 'before', 'putting', 'all', 'of', 'your', 'energy', 'literally', 'into', 'your', 'workouts', 'be', 'sure', 'that', 'you', 'are', 'prepping', 'yourself', 'by', 'eating', 'the', 'foods', 'that', 'provide', 'you', 'with', 'the', 'nutrients', 'your', 'body', 'needs', 'a', 'successful', 'pairing', 'of', 'exercise', 'and', 'nutrition', 'is', 'not', 'beyond', 'your', 'reach']
-augmented sentence: ['the', 'perfect', 'weightloss', 'romance', 'diet', 'meets', 'exercise', 'before', 'putting', 'all', 'of', 'your', 'energy', 'literally', 'into', 'your', 'workouts', 'be', 'sure', 'that', 'faire', 'are', 'prepping', 'yourself', 'by', 'eating', 'the', 'diets', 'that', 'provide', 'concent', 'with', 'the', 'nutrients', 'your', 'body', 'needs', 'a', 'successful', 'pairing', 'of', 'exercise', 'and', 'nutrition', 'is', 'not', 'beyond', 'your', 'reach']
-2021-06-14 15:39:03,705 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['travel', 'not', 'donald']
-POS of replace tokens: ['NN', 'RB', 'NN']
-new tokens: ['litter', 'nt', 'weed']
-POS of new tokens: ['NN', 'NN', 'NN']
-original sentence: ['neil', 'gorsuch', 'does', 'not', 'give', 'any', 'hints', 'on', 'how', 'he', 'would', 'rule', 'on', 'donald', 'trumps', 'travel', 'ban', 'he', 'stuck', 'to', 'general', 'constitutional', 'principles']
-augmented sentence: ['neil', 'gorsuch', 'does', 'nt', 'give', 'any', 'hints', 'on', 'how', 'he', 'would', 'rule', 'on', 'weed', 'trumps', 'litter', 'ban', 'he', 'stuck', 'to', 'general', 'constitutional', 'principles']
-2021-06-14 15:39:04,070 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['girls', 'for', 'been']
-POS of replace tokens: ['NNS', 'IN', 'VBN']
-new tokens: ['celebrity', 'into', 'again']
-POS of new tokens: ['NN', 'IN', 'RB']
-original sentence: ['another', 'one', 'of', 'your', 'gilmore', 'girls', 'faves', 'is', 'officially', 'returning', 'for', 'the', 'revival', 'have', 'i', 'ever', 'been', 'mistaken', 'for', 'a', 'patient', 'person']
-augmented sentence: ['another', 'one', 'of', 'your', 'gilmore', 'celebrity', 'faves', 'is', 'officially', 'returning', 'into', 'the', 'revival', 'have', 'i', 'ever', 'again', 'mistaken', 'for', 'a', 'patient', 'person']
-2021-06-14 15:39:04,474 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['past', 'prescribed', 'testosterone']
-POS of replace tokens: ['NN', 'NNS', 'NN']
-new tokens: ['coming', 'healthier', 'hormone']
-POS of new tokens: ['VBG', 'NN', 'NN']
-original sentence: ['do', 'all', 'men', 'getting', 'testosterone', 'therapy', 'actually', 'need', 'it', 'over', 'the', 'past', 'decade', 'older', 'and', 'middleaged', 'men', 'are', 'increasingly', 'being', 'tested', 'for', 'low', 'testosterone', 'levels', 'and', 'being', 'prescribed']
-augmented sentence: ['do', 'all', 'men', 'getting', 'hormone', 'therapy', 'actually', 'need', 'it', 'over', 'the', 'coming', 'decade', 'older', 'and', 'middleaged', 'men', 'are', 'increasingly', 'being', 'tested', 'for', 'low', 'testosterone', 'levels', 'and', 'being', 'healthier']
-2021-06-14 15:39:04,763 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['plan', 'redistricting', 'alabama']
+original sentence: ['do', 'not', 'diagnose', 'drug', 'allergies', 'over', 'the', 'phone', 'it', 'is', 'not', 'a', 'good', 'idea', 'to', 'diagnose', 'drug', 'allergies', 'without', 'seeing', 'the', 'patient', 'first', 'it', 'is', 'very', 'difficult', 'to', 'describe', 'a', 'rash', 'over', 'the', 'phone', 'are', 'the', 'spots', 'pink', 'or', 'red', 'are', 'they', 'raised', 'or', 'flat', 'are', 'they', 'isolated', 'or', 'do', 'they', 'appear', 'in', 'groups']
+augmented sentence: ['do', 'not', 'diagnose', 'drug', 'allergies', 'over', 'the', 'phone', 'it', 'is', 'not', 'a', 'good', 'idea', 'to', 'diagnose', 'drug', 'allergies', 'without', 'seeing', 'the', 'patient', 'first', 'it', 'is', 'very', 'difficult', 'to', 'describe', 'a', 'rash', 'over', 'the', 'phone', 'are', 'the', 'spots', 'bright', 'or', 'darker', 'are', 'spots', 'raised', 'or', 'flat', 'are', 'they', 'isolated', 'or', 'do', 'they', 'appear', 'in', 'groups']
+2021-06-14 15:44:17,922 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['of', 'emergency', 'in']
+POS of replace tokens: ['IN', 'NN', 'IN']
+new tokens: ['declares', 'truce', 'amid']
+POS of new tokens: ['NNS', 'NN', 'IN']
+original sentence: ['state', 'of', 'emergency', 'ends', 'in', 'ferguson', 'the', 'state', 'of', 'emergency', 'went', 'into', 'effect', 'in', 'response', 'to', 'demonstrations', 'marking', 'the', 'oneyear', 'anniversary', 'of', 'the', 'shooting', 'death', 'of', 'mike', 'brown']
+augmented sentence: ['state', 'declares', 'truce', 'ends', 'amid', 'ferguson', 'the', 'state', 'of', 'emergency', 'went', 'into', 'effect', 'in', 'response', 'to', 'demonstrations', 'marking', 'the', 'oneyear', 'anniversary', 'of', 'the', 'shooting', 'death', 'of', 'mike', 'brown']
+2021-06-14 15:44:18,788 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['before', 'my', 'balked']
+POS of replace tokens: ['IN', 'PRP$', 'VBD']
+new tokens: ['about', 'this', 'been']
+POS of new tokens: ['IN', 'DT', 'VBN']
+original sentence: ['a', 'ritual', 'of', 'refreshing', 'restraint', 'i', 'went', 'to', 'my', 'first', 'japanese', 'tea', 'ceremony', 'today', 'actually', 'it', 'was', 'my', 'first', 'tea', 'ceremony', 'period', 'big', 'whoop', 'you', 'might', 'think', 'except', 'that', 'six', 'months', 'ago', 'i', 'would', 'have', 'balked', 'at', 'such', 'an', 'opportunity', 'before', 'moving', 'to', 'singapore', 'last', 'year', 'i', 'was', 'an', 'avowed', 'antiteaite']
+augmented sentence: ['a', 'ritual', 'of', 'refreshing', 'restraint', 'i', 'went', 'to', 'this', 'first', 'japanese', 'tea', 'ceremony', 'today', 'actually', 'it', 'was', 'my', 'first', 'tea', 'ceremony', 'period', 'big', 'whoop', 'you', 'might', 'think', 'except', 'that', 'six', 'months', 'ago', 'i', 'would', 'have', 'been', 'at', 'such', 'an', 'opportunity', 'about', 'moving', 'to', 'singapore', 'last', 'year', 'i', 'was', 'an', 'avowed', 'antiteaite']
+2021-06-14 15:44:19,407 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['i', 'searching', 'i']
 POS of replace tokens: ['NN', 'VBG', 'NN']
-new tokens: ['.]', 'bans', 'handgun']
+new tokens: ['just', 'working', 'hy']
+POS of new tokens: ['RB', 'VBG', 'NN']
+original sentence: ['access', 'your', 'dream', 'career', 'today', 'when', 'i', 'started', 'my', 'business', 'over', 'three', 'years', 'ago', 'i', 'had', 'been', 'searching', 'for', 'years', 'and', 'then', 'one', 'day', 'i', 'got', 'asked', 'a', 'special', 'question', 'that', 'helped', 'put', 'me', 'on', 'the', 'career', 'path', 'of', 'my', 'dreams', 'i', 'hope', 'you', 'find', 'that', 'this', 'video', 'can', 'help', 'you', 'on', 'your', 'career', 'journey', 'as', 'well']
+augmented sentence: ['access', 'your', 'dream', 'career', 'today', 'when', 'just', 'started', 'my', 'business', 'over', 'three', 'years', 'ago', 'hy', 'had', 'been', 'working', 'for', 'years', 'and', 'then', 'one', 'day', 'i', 'got', 'asked', 'a', 'special', 'question', 'that', 'helped', 'put', 'me', 'on', 'the', 'career', 'path', 'of', 'my', 'dreams', 'i', 'hope', 'you', 'find', 'that', 'this', 'video', 'can', 'help', 'you', 'on', 'your', 'career', 'journey', 'as', 'well']
+2021-06-14 15:44:19,772 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['bernie', 'first', 'sanders']
+POS of replace tokens: ['NN', 'RB', 'NNS']
+new tokens: ['jack', 'top', 'pots']
+POS of new tokens: ['NN', 'NN', 'NNS']
+original sentence: ['donald', 'trump', 'will', 'not', 'debate', 'second', 'place', 'finisher', 'bernie', 'sanders', 'he', 'will', 'just', 'have', 'to', 'debate', 'the', 'first', 'place', 'finisher', 'probably', 'crooked', 'hillary', 'clinton']
+augmented sentence: ['donald', 'trump', 'will', 'not', 'debate', 'second', 'place', 'finisher', 'jack', 'pots', 'he', 'will', 'just', 'have', 'to', 'debate', 'the', 'top', 'place', 'finisher', 'probably', 'crooked', 'hillary', 'clinton']
+2021-06-14 15:44:20,153 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['return', 'not', 'nina']
+POS of replace tokens: ['NN', 'RB', 'NN']
+new tokens: ['cia', 'probably', 'Bella']
+POS of new tokens: ['NN', 'RB', 'NN']
+original sentence: ['vampire', 'diaries', 'showrunner', 'teases', 'possibility', 'of', 'nina', 'dobrevs', 'return', 'because', 'we', 'all', 'know', 'the', 'final', 'season', 'would', 'not', 'be', 'the', 'same', 'without', 'her']
+augmented sentence: ['vampire', 'diaries', 'showrunner', 'teases', 'possibility', 'of', 'Bella', 'dobrevs', 'cia', 'because', 'we', 'all', 'know', 'the', 'final', 'season', 'would', 'probably', 'be', 'the', 'same', 'without', 'her']
+2021-06-14 15:44:20,711 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['case', 'lawyer', 'who']
+POS of replace tokens: ['NN', 'NN', 'WP']
+new tokens: ['."', 'attorney', 'he']
+POS of new tokens: ['NN', 'NN', 'PRP']
+original sentence: ['former', 'cia', 'detainees', 'are', 'suing', 'the', 'psychologists', 'who', 'developed', 'the', 'torture', 'program', 'an', 'aclu', 'lawyer', 'representing', 'the', 'former', 'detainees', 'says', 'the', 'senate', 'torture', 'report', 'is', 'really', 'why', 'our', 'clients', 'are', 'able', 'to', 'pursue', 'this', 'case']
+augmented sentence: ['former', 'cia', 'detainees', 'are', 'suing', 'the', 'psychologists', 'he', 'developed', 'the', 'torture', 'program', 'an', 'aclu', 'attorney', 'representing', 'the', 'former', 'detainees', 'says', 'the', 'senate', 'torture', 'report', 'is', 'really', 'why', 'our', 'clients', 'are', 'able', 'to', 'pursue', 'this', '."']
+2021-06-14 15:44:21,104 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['in', 'are', 'service']
+POS of replace tokens: ['IN', 'VBP', 'NN']
+new tokens: ['ove', "'ll", 'bunker']
+POS of new tokens: ['NN', 'MD', 'NN']
+original sentence: ['take', 'a', 'look', 'behind', 'the', 'scenes', 'of', 'the', 'secret', 'service', 'they', 'are', 'always', 'in', 'the', 'background']
+augmented sentence: ['take', 'a', 'look', 'behind', 'the', 'scenes', 'of', 'the', 'secret', 'bunker', 'they', "'ll", 'always', 'ove', 'the', 'background']
+2021-06-14 15:44:21,626 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['his', 'president', 'actually']
+POS of replace tokens: ['PRP$', 'NN', 'RB']
+new tokens: ['actually', 'whom', 'to']
+POS of new tokens: ['RB', 'WP', 'TO']
+original sentence: ['mark', 'kirk', 'will', 'not', 'say', 'who', 'has', 'his', 'vote', 'for', 'president', 'the', 'republican', 'senator', 'has', 'now', 'changed', 'his', 'mind', 'four', 'times']
+augmented sentence: ['mark', 'kirk', 'will', 'not', 'say', 'who', 'has', 'to', 'vote', 'for', 'whom', 'the', 'republican', 'senator', 'has', 'now', 'changed', 'his', 'mind', 'four', 'times']
+2021-06-14 15:44:22,103 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['likely', 'opinion', 'worse']
+POS of replace tokens: ['JJ', 'NN', 'JJR']
+new tokens: ['bound', 'rating', 'badly']
+POS of new tokens: ['NN', 'NN', 'RB']
+original sentence: ['this', 'years', 'primary', 'left', 'most', 'voters', 'with', 'a', 'lower', 'opinion', 'of', 'the', 'gop', 'even', 'republicans', 'are', 'more', 'likely', 'to', 'feel', 'worse', 'than', 'better', 'about', 'their', 'party']
+augmented sentence: ['this', 'years', 'primary', 'left', 'most', 'voters', 'with', 'a', 'lower', 'rating', 'of', 'the', 'gop', 'even', 'republicans', 'are', 'more', 'bound', 'to', 'feel', 'badly', 'than', 'better', 'about', 'their', 'party']
+2021-06-14 15:44:22,503 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['new', 'and', 'get']
+POS of replace tokens: ['JJ', 'CC', 'VB']
+new tokens: ['mountain', 'decide', 'are']
+POS of new tokens: ['NN', 'NN', 'VBP']
+original sentence: ['when', 'and', 'where', 'to', 'find', 'falls', 'most', 'fantastic', 'foliage', 'infographic', 'get', 'going', 'soon', 'to', 'catch', 'octobers', 'glory', 'in', 'the', 'northeast', 'states', 'where', 'new', 'england', 'earns', 'its', 'reputation', 'for', 'spectacular', 'fall', 'foliage']
+augmented sentence: ['when', 'decide', 'where', 'to', 'find', 'falls', 'most', 'fantastic', 'foliage', 'infographic', 'are', 'going', 'soon', 'to', 'catch', 'octobers', 'glory', 'in', 'the', 'northeast', 'states', 'where', 'mountain', 'england', 'earns', 'its', 'reputation', 'for', 'spectacular', 'fall', 'foliage']
+2021-06-14 15:44:22,903 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['national', 'stage', 'house']
+POS of replace tokens: ['JJ', 'NN', 'NN']
+new tokens: ['party', 'microphone', 'RNC']
+POS of new tokens: ['NN', 'NN', 'NN']
+original sentence: ['watch', 'the', '2016', 'republican', 'national', 'convention', 'live', 'house', 'speaker', 'paul', 'ryan', 'is', 'set', 'to', 'take', 'the', 'stage']
+augmented sentence: ['watch', 'the', '2016', 'republican', 'party', 'convention', 'live', 'RNC', 'speaker', 'paul', 'ryan', 'is', 'set', 'to', 'take', 'the', 'microphone']
+2021-06-14 15:44:23,474 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['whether', 'fight', 'split']
+POS of replace tokens: ['IN', 'NN', 'NN']
+new tokens: ['promise', 'vote', 'splitting']
+POS of new tokens: ['NN', 'NN', 'NN']
+original sentence: ['bernie', 'sanders', 'campaign', 'is', 'split', 'over', 'whether', 'to', 'fight', 'on', 'past', 'tuesday', 'a', 'split', 'is', 'emerging', 'inside', 'the', 'bernie', 'sanders', 'campaign', 'over', 'whether', 'the', 'senator', 'should', 'stand', 'down', 'after', 'tuesdays', 'election']
+augmented sentence: ['bernie', 'sanders', 'campaign', 'is', 'splitting', 'over', 'promise', 'to', 'vote', 'on', 'past', 'tuesday', 'a', 'split', 'is', 'emerging', 'inside', 'the', 'bernie', 'sanders', 'campaign', 'over', 'whether', 'the', 'senator', 'should', 'stand', 'down', 'after', 'tuesdays', 'election']
+2021-06-14 15:44:23,711 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['messy', 'eater', 'disgusting']
+POS of replace tokens: ['NN', 'NN', 'VBG']
+new tokens: ['disgusting', 'woman', 'poor']
+POS of new tokens: ['VBG', 'NN', 'JJ']
+original sentence: ['guess', 'who', 'this', 'messy', 'eater', 'turned', 'into']
+augmented sentence: ['guess', 'who', 'this', 'poor', 'woman', 'turned', 'into']
+2021-06-14 15:44:24,180 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['have', 'brothers', 'plans']
+POS of replace tokens: ['VB', 'NNS', 'NNS']
+new tokens: ['made', 'Brothers', 'commitments']
+POS of new tokens: ['VBN', 'NNS', 'NNS']
+original sentence: ['koch', 'brothers', 'will', 'not', 'spend', 'money', 'to', 'attack', 'donald', 'trump', 'in', 'primary', 'we', 'have', 'no', 'plans', 'to', 'get', 'involved', 'in', 'the', 'primary', 'said', 'james', 'davis', 'spokesman', 'for', 'freedom', 'partners', 'the', 'koch', 'brothers', 'political', 'umbrella', 'group']
+augmented sentence: ['koch', 'Brothers', 'will', 'not', 'spend', 'money', 'to', 'attack', 'donald', 'trump', 'in', 'primary', 'we', 'made', 'no', 'commitments', 'to', 'get', 'involved', 'in', 'the', 'primary', 'said', 'james', 'davis', 'spokesman', 'for', 'freedom', 'partners', 'the', 'koch', 'brothers', 'political', 'umbrella', 'group']
+2021-06-14 15:44:24,607 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['skill', 'overestimated', 'of']
+POS of replace tokens: ['NN', 'VBN', 'IN']
+new tokens: ['chess', 'invented', 'for']
+POS of new tokens: ['NN', 'VBN', 'IN']
+original sentence: ['the', 'unhappy', 'campaign', 'of', 'paul', 'manafort', 'he', 'overestimated', 'his', 'own', 'skill', 'set', 'and', 'donald', 'trumps', 'sanity', 'and', 'underestimated', 'his', 'enemies', 'and', 'the', 'political', 'danger', 'of', 'his', 'ukraine', 'ties']
+augmented sentence: ['the', 'unhappy', 'campaign', 'for', 'paul', 'manafort', 'he', 'invented', 'his', 'own', 'chess', 'set', 'and', 'donald', 'trumps', 'sanity', 'and', 'underestimated', 'his', 'enemies', 'and', 'the', 'political', 'danger', 'of', 'his', 'ukraine', 'ties']
+2021-06-14 15:44:25,171 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['reach', 'your', 'nutrients']
+POS of replace tokens: ['NN', 'PRP$', 'NNS']
+new tokens: ['capabilities', 'our', 'benefits']
+POS of new tokens: ['NNS', 'PRP$', 'NNS']
+original sentence: ['the', 'perfect', 'weightloss', 'romance', 'diet', 'meets', 'exercise', 'before', 'putting', 'all', 'of', 'your', 'energy', 'literally', 'into', 'your', 'workouts', 'be', 'sure', 'that', 'you', 'are', 'prepping', 'yourself', 'by', 'eating', 'the', 'foods', 'that', 'provide', 'you', 'with', 'the', 'nutrients', 'your', 'body', 'needs', 'a', 'successful', 'pairing', 'of', 'exercise', 'and', 'nutrition', 'is', 'not', 'beyond', 'your', 'reach']
+augmented sentence: ['the', 'perfect', 'weightloss', 'romance', 'diet', 'meets', 'exercise', 'before', 'putting', 'all', 'of', 'our', 'energy', 'literally', 'into', 'your', 'workouts', 'be', 'sure', 'that', 'you', 'are', 'prepping', 'yourself', 'by', 'eating', 'the', 'foods', 'that', 'provide', 'you', 'with', 'the', 'benefits', 'your', 'body', 'needs', 'a', 'successful', 'pairing', 'of', 'exercise', 'and', 'nutrition', 'is', 'not', 'beyond', 'your', 'capabilities']
+2021-06-14 15:44:25,537 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['not', 'would', 'how']
+POS of replace tokens: ['RB', 'MD', 'WRB']
+new tokens: ['NOT', 'SHOULD', 'HOW']
+POS of new tokens: ['NN', 'MD', 'WRB']
+original sentence: ['neil', 'gorsuch', 'does', 'not', 'give', 'any', 'hints', 'on', 'how', 'he', 'would', 'rule', 'on', 'donald', 'trumps', 'travel', 'ban', 'he', 'stuck', 'to', 'general', 'constitutional', 'principles']
+augmented sentence: ['neil', 'gorsuch', 'does', 'NOT', 'give', 'any', 'hints', 'on', 'HOW', 'he', 'SHOULD', 'rule', 'on', 'donald', 'trumps', 'travel', 'ban', 'he', 'stuck', 'to', 'general', 'constitutional', 'principles']
+2021-06-14 15:44:26,035 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['one', 'faves', 'for']
+POS of replace tokens: ['CD', 'NNS', 'IN']
+new tokens: ['favourite', 'gang', 'to']
+POS of new tokens: ['NN', 'NN', 'TO']
+original sentence: ['another', 'one', 'of', 'your', 'gilmore', 'girls', 'faves', 'is', 'officially', 'returning', 'for', 'the', 'revival', 'have', 'i', 'ever', 'been', 'mistaken', 'for', 'a', 'patient', 'person']
+augmented sentence: ['another', 'favourite', 'of', 'your', 'gilmore', 'girls', 'gang', 'is', 'officially', 'returning', 'to', 'the', 'revival', 'have', 'i', 'ever', 'been', 'mistaken', 'for', 'a', 'patient', 'person']
+2021-06-14 15:44:26,413 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['older', 'low', 'men']
+POS of replace tokens: ['JJR', 'JJ', 'NNS']
+new tokens: ['younger', 'excessive', 'people']
+POS of new tokens: ['JJR', 'JJ', 'NNS']
+original sentence: ['do', 'all', 'men', 'getting', 'testosterone', 'therapy', 'actually', 'need', 'it', 'over', 'the', 'past', 'decade', 'older', 'and', 'middleaged', 'men', 'are', 'increasingly', 'being', 'tested', 'for', 'low', 'testosterone', 'levels', 'and', 'being', 'prescribed']
+augmented sentence: ['do', 'all', 'people', 'getting', 'testosterone', 'therapy', 'actually', 'need', 'it', 'over', 'the', 'past', 'decade', 'younger', 'and', 'middleaged', 'men', 'are', 'increasingly', 'being', 'tested', 'for', 'excessive', 'testosterone', 'levels', 'and', 'being', 'prescribed']
+2021-06-14 15:44:26,958 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['ruling', 'upheld', 'court']
+POS of replace tokens: ['NN', 'NN', 'NN']
+new tokens: ['court', 'opposes', 'lawsuit']
 POS of new tokens: ['NN', 'NNS', 'NN']
 original sentence: ['u', 's', 'justices', 'throw', 'out', 'ruling', 'that', 'upheld', 'alabama', 'redistricting', 'plan']
-augmented sentence: ['u', 's', 'justices', 'throw', 'out', 'ruling', 'that', 'upheld', 'handgun', 'bans', '.]']
-2021-06-14 15:39:05,289 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['monica', 'our', 'why']
-POS of replace tokens: ['NN', 'PRP$', 'WRB']
-new tokens: ['nick', 'deep', 'RIP']
-POS of new tokens: ['NN', 'NN', 'NN']
+augmented sentence: ['u', 's', 'justices', 'throw', 'out', 'lawsuit', 'that', 'opposes', 'alabama', 'redistricting', 'plan']
+2021-06-14 15:44:27,725 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['and', 'i', 'there']
+POS of replace tokens: ['CC', 'NN', 'RB']
+new tokens: ['&', 'ot', 'There']
+POS of new tokens: ['CC', 'NN', 'EX']
 original sentence: ['why', 'monica', 'lewinsky', 'deserves', 'our', 'compassion', 'not', 'scorn', 'in', '1998', 'i', 'lost', 'my', 'reputation', 'and', 'my', 'dignity', 'i', 'lost', 'my', 'sense', 'of', 'self', 'lewinsky', 'explained', 'when', 'this', 'happened', 'to', 'me', '17', 'years', 'ago', 'there', 'was', 'no', 'name', 'for', 'it', 'now', 'we', 'call', 'it', 'cyberbullying']
-augmented sentence: ['RIP', 'nick', 'lewinsky', 'deserves', 'deep', 'compassion', 'not', 'scorn', 'in', '1998', 'i', 'lost', 'my', 'reputation', 'and', 'my', 'dignity', 'i', 'lost', 'my', 'sense', 'of', 'self', 'lewinsky', 'explained', 'when', 'this', 'happened', 'to', 'me', '17', 'years', 'ago', 'there', 'was', 'no', 'name', 'for', 'it', 'now', 'we', 'call', 'it', 'cyberbullying']
-2021-06-14 15:39:05,639 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['on', 'orange', 'of']
-POS of replace tokens: ['IN', 'NN', 'IN']
-new tokens: ['bro', 'joke', 'ality']
-POS of new tokens: ['NN', 'NN', 'NN']
+augmented sentence: ['why', 'monica', 'lewinsky', 'deserves', 'our', 'compassion', 'not', 'scorn', 'in', '1998', 'ot', 'lost', 'my', 'reputation', '&', 'my', 'dignity', 'i', 'lost', 'my', 'sense', 'of', 'self', 'lewinsky', 'explained', 'when', 'this', 'happened', 'to', 'me', '17', 'years', 'ago', 'There', 'was', 'no', 'name', 'for', 'it', 'now', 'we', 'call', 'it', 'cyberbullying']
+2021-06-14 15:44:28,072 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['sincerest', 'flattery', 'form']
+POS of replace tokens: ['NN', 'NN', 'NN']
+new tokens: ['greatest', 'appropriation', 'feat']
+POS of new tokens: ['JJS', 'NN', 'NN']
 original sentence: ['this', 'womans', 'orange', 'is', 'the', 'new', 'black', 'impressions', 'are', 'spot', 'on', 'imitation', 'is', 'the', 'sincerest', 'form', 'of', 'flattery']
-augmented sentence: ['this', 'womans', 'joke', 'is', 'the', 'new', 'black', 'impressions', 'are', 'spot', 'bro', 'imitation', 'is', 'the', 'sincerest', 'form', 'ality', 'flattery']
-2021-06-14 15:39:05,993 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['contested', 'be', 'what']
-POS of replace tokens: ['VBN', 'VB', 'WP']
-new tokens: ['convention', 'ignite', 'delegates']
-POS of new tokens: ['NN', 'NN', 'NNS']
+augmented sentence: ['this', 'womans', 'orange', 'is', 'the', 'new', 'black', 'impressions', 'are', 'spot', 'on', 'imitation', 'is', 'the', 'greatest', 'feat', 'of', 'appropriation']
+2021-06-14 15:44:28,497 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['how', 'contested', 'nomination']
+POS of replace tokens: ['WRB', 'VBN', 'NN']
+new tokens: ['effort', 'Republican', 'title']
+POS of new tokens: ['NN', 'JJ', 'NN']
 original sentence: ['how', 'to', 'steal', 'a', 'nomination', 'from', 'donald', 'trump', 'an', 'insiders', 'guide', 'to', 'what', 'could', 'be', 'the', 'struggle', 'to', 'win', 'a', 'contested', 'convention']
-augmented sentence: ['how', 'to', 'steal', 'a', 'nomination', 'from', 'donald', 'trump', 'an', 'insiders', 'guide', 'to', 'delegates', 'could', 'ignite', 'the', 'struggle', 'to', 'win', 'a', 'convention', 'convention']
-2021-06-14 15:39:06,412 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['we', 'flubs', 'you']
-POS of replace tokens: ['PRP', 'NNS', 'PRP']
-new tokens: ['We', 'anthem', 'After']
-POS of new tokens: ['PRP', 'NN', 'IN']
+augmented sentence: ['effort', 'to', 'steal', 'a', 'title', 'from', 'donald', 'trump', 'an', 'insiders', 'guide', 'to', 'what', 'could', 'be', 'the', 'struggle', 'to', 'win', 'a', 'Republican', 'convention']
+2021-06-14 15:44:28,888 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['before', 'you', 'playoff']
+POS of replace tokens: ['IN', 'PRP', 'NN']
+new tokens: ['vs', 'After', 'w']
+POS of new tokens: ['NN', 'IN', 'NN']
 original sentence: ['lady', 'antebellum', 'flubs', 'national', 'anthem', 'before', 'nhl', 'playoff', 'game', 'we', 'are', 'human', 'too', 'you', 'all']
-augmented sentence: ['lady', 'antebellum', 'anthem', 'national', 'anthem', 'before', 'nhl', 'playoff', 'game', 'We', 'are', 'human', 'too', 'After', 'all']
-2021-06-14 15:39:06,822 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['thing', 'important', 'you']
-POS of replace tokens: ['NN', 'JJ', 'PRP']
-new tokens: ['fact', 'interesting', 'ire']
-POS of new tokens: ['NN', 'VBG', 'NN']
+augmented sentence: ['lady', 'antebellum', 'flubs', 'national', 'anthem', 'vs', 'nhl', 'w', 'game', 'we', 'are', 'human', 'too', 'After', 'all']
+2021-06-14 15:44:29,956 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['scent', 'who', 'other']
+POS of replace tokens: ['NN', 'WP', 'JJ']
+new tokens: ['perfume', 'truly', 'only']
+POS of new tokens: ['NN', 'RB', 'RB']
 original sentence: ['finding', 'your', 'perfect', 'scent', 'the', 'most', 'important', 'thing', 'to', 'remember', 'when', 'shopping', 'for', 'a', 'fragrance', 'is', 'that', 'it', 'is', 'you', 'who', 'brings', 'a', 'fragrance', 'to', 'life', 'not', 'the', 'other', 'way', 'around']
-augmented sentence: ['finding', 'your', 'perfect', 'scent', 'the', 'most', 'interesting', 'fact', 'to', 'remember', 'when', 'shopping', 'for', 'a', 'fragrance', 'is', 'that', 'it', 'is', 'ire', 'who', 'brings', 'a', 'fragrance', 'to', 'life', 'not', 'the', 'other', 'way', 'around']
-2021-06-14 15:39:07,231 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['dealt', 'dogged', 'with']
-POS of replace tokens: ['NN', 'VBN', 'IN']
-new tokens: ['connected', 'hampered', 'against']
-POS of new tokens: ['VBN', 'VBN', 'IN']
+augmented sentence: ['finding', 'your', 'perfect', 'perfume', 'the', 'most', 'important', 'thing', 'to', 'remember', 'when', 'shopping', 'for', 'a', 'fragrance', 'is', 'that', 'it', 'is', 'you', 'truly', 'brings', 'a', 'fragrance', 'to', 'life', 'not', 'the', 'only', 'way', 'around']
+2021-06-14 15:44:30,917 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['that', 'strikes', 'planned']
+POS of replace tokens: ['IN', 'NNS', 'VBN']
+new tokens: ['it', 'flights', 'missing']
+POS of new tokens: ['PRP', 'NNS', 'VBG']
 original sentence: ['emails', 'in', 'clinton', 'probe', 'dealt', 'with', 'planned', 'drone', 'strikes', 'wsj', 'the', 'stillsecret', 'emails', 'are', 'a', 'key', 'part', 'of', 'the', 'fbi', 'investigation', 'that', 'has', 'long', 'dogged', 'clintons', 'presidential', 'campaign']
-augmented sentence: ['emails', 'in', 'clinton', 'probe', 'connected', 'against', 'planned', 'drone', 'strikes', 'wsj', 'the', 'stillsecret', 'emails', 'are', 'a', 'key', 'part', 'of', 'the', 'fbi', 'investigation', 'that', 'has', 'long', 'hampered', 'clintons', 'presidential', 'campaign']
-2021-06-14 15:39:07,932 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['for', 'i', 'shall']
-POS of replace tokens: ['IN', 'NN', 'MD']
-new tokens: ['proper', 'I', 'wont']
-POS of new tokens: ['NN', 'PRP', 'NN']
+augmented sentence: ['emails', 'in', 'clinton', 'probe', 'dealt', 'with', 'missing', 'drone', 'flights', 'wsj', 'the', 'stillsecret', 'emails', 'are', 'a', 'key', 'part', 'of', 'the', 'fbi', 'investigation', 'it', 'has', 'long', 'dogged', 'clintons', 'presidential', 'campaign']
+2021-06-14 15:44:32,484 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['save', 'from', '2014']
+POS of replace tokens: ['VB', 'IN', 'CD']
+new tokens: ['lay', 'find', '2009']
+POS of new tokens: ['NN', 'VB', 'CD']
 original sentence: ['i', 'will', 'not', 'fix', 'everything', 'in', '2014', 'what', 'i', 'need', 'more', 'than', 'anything', 'in', '2014', 'is', 'calm', 'i', 'need', 'to', 'get', 'off', 'the', 'scale', 'relax', 'find', 'balance', 'eat', 'for', 'health', 'and', 'parent', 'my', 'children', 'from', 'a', 'place', 'of', 'grace', 'there', 'is', 'more', 'but', 'i', 'will', 'not', 'fix', 'everything', 'in', '2014', 'i', 'shall', 'save', 'the', 'rest', 'for', 'another', 'year']
-augmented sentence: ['I', 'will', 'not', 'fix', 'everything', 'in', '2014', 'what', 'i', 'need', 'more', 'than', 'anything', 'in', '2014', 'is', 'calm', 'i', 'need', 'to', 'get', 'off', 'the', 'scale', 'relax', 'find', 'balance', 'eat', 'proper', 'health', 'and', 'parent', 'my', 'children', 'from', 'a', 'place', 'of', 'grace', 'there', 'is', 'more', 'but', 'i', 'will', 'not', 'fix', 'everything', 'in', '2014', 'i', 'wont', 'save', 'the', 'rest', 'for', 'another', 'year']
-2021-06-14 15:39:08,297 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['her', 'but', 'reveals']
-POS of replace tokens: ['PRP$', 'CC', 'NNS']
-new tokens: ['herself', 'beyond', 'showed']
-POS of new tokens: ['NN', 'IN', 'VBD']
+augmented sentence: ['i', 'will', 'not', 'fix', 'everything', 'in', '2009', 'what', 'i', 'need', 'more', 'than', 'anything', 'in', '2014', 'is', 'calm', 'i', 'need', 'to', 'get', 'off', 'the', 'scale', 'relax', 'find', 'balance', 'eat', 'for', 'health', 'and', 'parent', 'my', 'children', 'find', 'a', 'place', 'of', 'grace', 'there', 'is', 'more', 'but', 'i', 'will', 'not', 'fix', 'everything', 'in', '2014', 'i', 'shall', 'lay', 'the', 'rest', 'for', 'another', 'year']
+2021-06-14 15:44:32,857 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['and', 'have', 'back']
+POS of replace tokens: ['CC', 'VB', 'RB']
+new tokens: ['says', 'felt', 'earlier']
+POS of new tokens: ['VBZ', 'NN', 'RBR']
 original sentence: ['aretha', 'franklin', 'photo', 'reveals', 'the', 'singer', 'wore', 'crop', 'tops', 'back', 'in', 'the', 'day', 'photo', 'and', 'we', 'have', 'nothing', 'but', 'respect', 'for', 'her']
-augmented sentence: ['aretha', 'franklin', 'photo', 'showed', 'the', 'singer', 'wore', 'crop', 'tops', 'back', 'in', 'the', 'day', 'photo', 'and', 'we', 'have', 'nothing', 'beyond', 'respect', 'for', 'herself']
-2021-06-14 15:39:08,852 — resources.transformer_augmenter — DEBUG —generate:136 — 
-replace tokens: ['which', 'want', 'local']
-POS of replace tokens: ['WDT', 'NN', 'JJ']
-new tokens: ['so', 'choose', 'fine']
-POS of new tokens: ['RB', 'NN', 'NN']
+augmented sentence: ['aretha', 'franklin', 'photo', 'reveals', 'the', 'singer', 'wore', 'crop', 'tops', 'earlier', 'in', 'the', 'day', 'photo', 'says', 'we', 'felt', 'nothing', 'but', 'respect', 'for', 'her']
+2021-06-14 15:44:33,670 — resources.transformer_augmenter — DEBUG —generate:136 — 
+replace tokens: ['best', 'sample', 'stay']
+POS of replace tokens: ['JJS', 'NN', 'NN']
+new tokens: ['just', 'tasting', 'staying']
+POS of new tokens: ['RB', 'VBG', 'VBG']
 original sentence: ['4', 'places', 'to', 'go', 'before', 'you', 'have', 'kids', 'these', 'are', 'not', 'babymoons', 'per', 'se', 'which', 'are', 'best', 'spent', 'relaxing', 'on', 'the', 'beach', 'these', 'four', 'places', 'are', 'where', 'you', 'will', 'want', 'to', 'be', 'on', 'your', 'own', 'schedule', 'to', 'get', 'adventurous', 'sample', 'the', 'local', 'wines', 'and', 'stay', 'up', 'into', 'the', 'wee', 'hours']
-augmented sentence: ['4', 'places', 'to', 'go', 'before', 'you', 'have', 'kids', 'these', 'are', 'not', 'babymoons', 'per', 'se', 'so', 'are', 'best', 'spent', 'relaxing', 'on', 'the', 'beach', 'these', 'four', 'places', 'are', 'where', 'you', 'will', 'choose', 'to', 'be', 'on', 'your', 'own', 'schedule', 'to', 'get', 'adventurous', 'sample', 'the', 'fine', 'wines', 'and', 'stay', 'up', 'into', 'the', 'wee', 'hours']
-2021-06-14 15:39:08,852 — pipeline.augment_data — INFO —augment_data:53 — 
+augmented sentence: ['4', 'places', 'to', 'go', 'before', 'you', 'have', 'kids', 'these', 'are', 'not', 'babymoons', 'per', 'se', 'which', 'are', 'just', 'spent', 'relaxing', 'on', 'the', 'beach', 'these', 'four', 'places', 'are', 'where', 'you', 'will', 'want', 'to', 'be', 'on', 'your', 'own', 'schedule', 'to', 'get', 'adventurous', 'tasting', 'the', 'local', 'wines', 'and', 'staying', 'up', 'into', 'the', 'wee', 'hours']
+2021-06-14 15:44:33,671 — pipeline.augment_data — INFO —augment_data:53 — 
 number of original sentences: 69
 number of sentences (original + augmented): 138
-2021-06-14 15:39:08,935 — resources.get_embeddings.get_TFIDF_embeddings — INFO —get_TFIDF_embeddings:18 — 
+2021-06-14 15:44:33,914 — resources.get_embeddings.get_TFIDF_embeddings — INFO —get_TFIDF_embeddings:18 — 
 getting tfidf vectors
-2021-06-14 15:39:09,253 — pipeline.train_multiple_models — INFO —train_multiple_models:42 — 
+2021-06-14 15:44:34,359 — pipeline.train_multiple_models — INFO —train_multiple_models:42 — 
 now training LogisticRegression(C=1, max_iter=1000, random_state=42)
-2021-06-14 15:39:09,637 — pipeline.train_multiple_models — INFO —train_multiple_models:42 — 
+2021-06-14 15:44:34,724 — pipeline.train_multiple_models — INFO —train_multiple_models:42 — 
 now training LinearSVC(C=1, random_state=42)
-2021-06-14 15:39:09,801 — pipeline.train_multiple_models — INFO —train_multiple_models:42 — 
+2021-06-14 15:44:34,855 — pipeline.train_multiple_models — INFO —train_multiple_models:42 — 
 now training SGDClassifier(max_iter=5, random_state=42)
-2021-06-14 15:39:10,083 — pipeline.train_multiple_models — INFO —train_multiple_models:42 — 
+2021-06-14 15:44:35,133 — pipeline.train_multiple_models — INFO —train_multiple_models:42 — 
 now training RandomForestClassifier(n_estimators=10, random_state=42)
-2021-06-14 15:39:10,579 — pipeline.train_multiple_models — INFO —train_multiple_models:42 — 
+2021-06-14 15:44:35,553 — pipeline.train_multiple_models — INFO —train_multiple_models:42 — 
 now training GradientBoostingClassifier(n_estimators=10, random_state=42)
-2021-06-14 15:39:12,058 — __main__ — INFO —<module>:50 — 
+2021-06-14 15:44:36,814 — __main__ — INFO —<module>:50 — 
 POLITICS          0.434783
 WELLNESS          0.173913
 ENTERTAINMENT     0.159420
@@ -521,8 +521,8 @@ TRAVEL            0.130435
 STYLE & BEAUTY    0.101449
 Name: category, dtype: float64
                               train_accuracy  val_accuracy  test_accuracy  average_fit_time
-Logistic Regression                 0.985487      0.463757       0.485714          0.047607
-Linear SVC                          1.000000      0.528571       0.571429          0.004922
-SGD Classifier                      1.000000      0.543386       0.514286          0.027662
-Random Forest Classifier            0.990925      0.550794       0.428571          0.036067
-Gradient Boosting Classifier        0.998182      0.499206       0.485714          0.195713
+Logistic Regression                 0.987305      0.478307       0.485714          0.037602
+Linear SVC                          1.000000      0.528571       0.600000          0.004253
+SGD Classifier                      1.000000      0.565344       0.542857          0.015845
+Random Forest Classifier            0.992776      0.535450       0.428571          0.049496
+Gradient Boosting Classifier        0.996364      0.500000       0.485714          0.168268
